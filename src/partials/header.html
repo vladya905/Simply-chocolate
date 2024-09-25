@@ -6,7 +6,9 @@
         <use href="../img/sprite.svg#logo-small"></use>
       </svg>
     </a>
-    <div class="header-menu"><nav class="header-nav"></nav>
+    <div class="header-menu is-hidden" data-menu>
+        <button type="button" data-menu-close>close</button>
+        <nav class="header-nav">
       <ul>
         <li><a href="">Home</a></li>
         <li><a href="">How it&#39;s made?</a></li>
@@ -19,20 +21,21 @@
       <ul>
         <li>
           <a href="">
-            <svg>
+            <svg class="soc-ico">
               <use href="../img/sprite.svg#instagram-mob"></use>
             </svg>
           </a>
         </li>
         <li><a href=""></a>
-            <svg>
+            <svg class="soc-ico">
               <use href="../img/sprite.svg#twitter-mob"></use>
             </svg>
           </a></li>
       </ul>
-    </address></div>
+    </address>
+</div>
     
-    <button type="button" class="burger-menu">
+    <button type="button" class="burger-menu" data-menu-open>
         <svg class="burger-ico">
             <use href="../img/sprite.svg#menu-small"></use>
         </svg>
