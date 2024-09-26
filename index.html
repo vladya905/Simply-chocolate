@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/Simply-chocolate/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-C2cECsw6.css">
+    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-CQbNR7JW.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -60,34 +60,39 @@
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="hero overlay">
-   <div class="container hero-main">
-      <h1 class="title visualli-hidden">HERO</h1>
-      <h2 class="hero-subtitle">
-         Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-      </h2>
-      <div class="hero-elements">
-         <div class="elements-box">
-            <button type="button" class="buy-btn">Buy now</button>
-            <a href="./how-its-made.html">How it’s made</a>
+      <section class="hero">
+   <div class="container overlay">
+      <div class="hero-main">
+         <h1 class="title visualli-hidden">HERO</h1>
+         <h2 class="hero-subtitle">
+            Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+         </h2>
+         <div class="hero-elements">
+            <div class="elements-box">
+               <button type="button" class="buy-btn">Buy now</button>
+               <a href="./how-its-made.html" class="how-link">How it’s made</a>
+            </div>
+            <a href="#" class="arrow-link">
+               scroll down
+               <svg width="16px" height="16px" class="arrow-svg">
+                  <use href="../img/sprite.svg#arrow-small"></use>
+               </svg>
+            </a>
          </div>
-         <a href="./footer.html" class="arrow-link">
-            scroll down
-            <svg>
-               <use href="../img/sprite.svg"></use>
-            </svg>
-         </a>
       </div>
-   </div>
-</section>
+   </div>      
+</section>   
+
       <section class="advantages">
    <div class="container">
       <h1 class="title visualli-hidden">ADVANTAGES</h1>
       <ul class="advantages-list">
          <li class="advantages-list-item">
-            <svg width="32px" height="32px">
-               <use href="../img/sprite.svg#chocolate-bar"></use>
-            </svg>
+            <div class="icon-border">
+               <svg width="32px" height="32px" class="advantages-icon">
+                  <use href="../img/sprite.svg#chocolate-bar"></use>
+               </svg>
+            </div>
             <h3 class="advantages-title">Unsurpassed taste</h3>
             <p class="advantages-descr">
                Crafted with the finest quality cocoa beans and a dedication to perfection, 
@@ -96,9 +101,11 @@
             </p>
          </li>
          <li class="advantages-list-item">
-            <svg width="32px" height="32px">
-               <use href="../img/sprite.svg#coin"></use>
-            </svg>
+            <div class="icon-border">
+               <svg width="32px" height="32px" class="advantages-icon">
+                  <use href="../img/sprite.svg#coin"></use>
+               </svg>
+            </div>
             <h3 class="advantages-title">Affordable price</h3>
             <p class="advantages-descr">
                Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats.
@@ -107,9 +114,11 @@
             </p>
          </li>
          <li class="advantages-list-item">
-            <svg width="32px" height="32px">
-               <use href="../img/sprite.svg#spoon"></use>
-            </svg>
+            <div class="icon-border">
+               <svg width="32px" height="32px" class="advantages-icon">
+                  <use href="../img/sprite.svg#spoon"></use>
+               </svg>
+            </div>
             <h3 class="advantages-title">Own production</h3>
             <p class="advantages-descr">
                We take pride in our own production process, ensuring that every step is carefully crafted to perfection.
@@ -119,10 +128,11 @@
       </ul>
    </div>
 </section>
+
       
       <section class="how-its-made">
    <div class="container">
-      <h1>HOW IT’S <span>MADE?</span></h1>
+      <h1 class="section-title">HOW IT’S <span class="title-wort">MADE?</span></h1>
       <div class="how-its-made-main">
          <iframe width="560" height="315" src="https://www.youtube.com/embed/ClWO74nUEdA?si=UpDyT2GbY2F6JUry" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
