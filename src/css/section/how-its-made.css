@@ -1,0 +1,25 @@
+
+iframe{
+   width: 100%;
+   max-width: 335px;
+   height: 500px;
+   border-radius: 15px;
+}
+
+.section-title{
+   margin: 0px 0px 32px 0px;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.title-wort{
+   color: var(--color-orange);
+}
+.rezept{
+   padding: 0px 14px;
+}
