@@ -1,0 +1,21 @@
+.top-sellers {
+   margin-bottom: 72px;
+   text-align: center;
+}
+.sellers-imgs {
+   padding: 0;
+}
+.sel-img{
+   border-radius: 15px;
+}
+.vis-hiden{
+   display: none;
+}
+.sellers-descr {
+   padding-right: 29px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 129%;
+   letter-spacing: -0.02em;
+   text-align: left;
+}
