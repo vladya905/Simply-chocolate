@@ -1,0 +1,32 @@
+.subscribe{
+
+}
+.sub-bg {
+   background-image: url(../../img/subscribe/sub-mob@1x.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.sub-main {
+   text-align: center;
+   padding: 62px 20px;
+}
+.title-sub {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: -0.03em;
+   text-transform: uppercase;
+   color: var(--color-white);
+}
+.sub-descr {
+   margin-top: 24px;
+   margin-bottom: 24px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: -0.02em;
+   color: var(--color-white);
+}
