@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/Simply-chocolate/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-qu3IlrFv.css">
+    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-Bw2H0S0s.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -66,7 +66,7 @@
       <section class="hero">
    <div class="container overlay">
       <div class="hero-main">
-         <h1 class="title visualli-hidden">HERO</h1>
+         <h1 class="title is-hidden">HERO</h1>
          <h2 class="hero-subtitle">
             Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
          </h2>
@@ -88,7 +88,7 @@
 
       <section class="advantages">
    <div class="container">
-      <h1 class="title visualli-hidden">ADVANTAGES</h1>
+      <h1 class="title is-hidden">ADVANTAGES</h1>
       <ul class="advantages-list">
          <li class="advantages-list-item">
             <div class="icon-border">
@@ -144,6 +144,7 @@
             <!-- <h4></h4> -->
              <h3 class="title-rezept">Try  our chocolates today and discover the perfect balance of flavor</h3>
              <ul class="rezept-list">
+               <li class="point-rezept">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
                <li class="point-rezept">At the same time, prepare a water bath. Melt the butter on it.</li>
                <li class="point-rezept">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
                <li class="point-rezept">Heat the mixture over low heat, letting it barely boil.</li>
@@ -156,32 +157,51 @@
       
       <section class="top-sellers">
    <div class="container">
-      <h1 class="title"><span>TOP</span>SELLERS</h1>
+      <h1 class="title"><span class="title-wort">TOP</span> SELLERS</h1>
       <div class="sellers-main">
          <ul class="sellers-imgs">
             <li>
-               <img src="../img/topsellers/seller1-mob@1x.jpg" alt="Chocolate with nuts">
+               <picture>
+                  <source srcset="../img/topsellers/seller1-desk@1x.jpg 1x, ../img/topsellers/seller1-desk@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                  <source srcset="../img/topsellers/seller1-tab@1x.jpg 1x, ../img/topsellers/seller1-tab@2x.jpg 2x"
+                     media="(min-width: 768px)">   
+
+                  <img src="../img/topsellers/seller1-mob@1x.jpg" alt="Chocolate with nuts" class="sel-img">
+               </picture>
             </li>
             <li>
-               <img src="../img/topsellers/seller2-mob@1x.jpg" alt="Milk chocolate">
+               <picture>
+                  <source srcset="../img/topsellers/seller2-desk@1x.jpg 1x, ../img/topsellers/seller2-desk@2x.jpg 2x"
+                     media="(min-width: 1200px)">
+                  <source srcset="../img/topsellers/seller2-tab@1x.jpg 1x, ../img/topsellers/seller2-tab@2x.jpg 2x"
+                     media="(min-width: 768px)">   
+
+                  <img src="../img/topsellers/seller2-mob@1x.jpg" alt="Milk chocolate" class="sel-img">
+               </picture>
             </li>
             <li>
-               <img src="../img/topsellers/seller3-desk@1x.jpg" alt="Dark chocolate pyramid">
+               <picture>
+                  <source srcset="../img/topsellers/seller3-desk@1x.jpg 1x, ../img/topsellers/seller3-desk@2x.jpg 2x">
+                  <img src="../img/topsellers/seller3-desk@1x.jpg" alt="Dark chocolate pyramid" class="sel-img vis-hiden">
+               </picture>
             </li>
          </ul>
-         <div class="sellers-item">
-            <p>Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. 
+         <div class="sellers-items">
+            <p class="sellers-descr">Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. 
                Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
             <button type="button" class="buy-btn">Buy now</button>
          </div>
       </div>
    </div>
 </section>
+
+
       
       <section class="subscribe">
-   <div class="container">
+   <div class="container sub-bg">
       <div class="sub-main">
-         <h1 class="title">EXPLORE OUR NEW CHOCOLATE FIRST</h1>
+         <h1 class="title-sub">EXPLORE OUR NEW CHOCOLATE FIRST</h1>
          <p class="sub-descr">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. 
             Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
          <button type="button" class="buy-btn">Subscribe</button>
