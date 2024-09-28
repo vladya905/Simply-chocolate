@@ -1,0 +1,115 @@
+.unico-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 283px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.unico-title > span {
+  color: var(--color-orange);
+}
+.unico-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.unico-list {
+  margin-top: 32px;
+}
+
+.unico-item {
+  width: 335px;
+  height: 270px;
+  border: 1px solid teal;
+  border-radius: 15px;
+}
+.unico-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.unico-item > picture > img {
+  margin: 28px auto 25px auto;
+  width: 224px;
+  height: 171px;
+}
+.unico-item:first-child {
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+.unico-item:nth-child(2n + 2) {
+  border-color: var(--color-orange);
+}
+.unico-item:nth-child(3) {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+.unico-descr {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-left: 28px;
+  margin-bottom: 28px;
+}
+.unico-card {
+  display: none;
+}
+/*! tablet */
+@media screen and (min-width: 768px) {
+  .unico-title {
+    font-size: 24px;
+    line-height: 1.17;
+    width: 411px;
+    margin-bottom: 28px;
+  }
+  .unico-text {
+    width: 486px;
+    margin: auto;
+  }
+  .unico-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .unico-item {
+    width: 336px;
+  }
+  .unico-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    .unico-item:nth-child(4) {
+      order: 2;
+    }
+    .unico-item:nth-child(2) {
+      order: 3;
+    }
+    .unico-item:nth-child(3) {
+      order: 4;
+    }
+  }
+}
+/*! desktop */
+@media screen and (min-width: 1200px) {
+  .unico-list {
+    gap: 19px;
+    flex-wrap: nowrap;
+  }
+  .unico-item {
+    width: 270px;
+  }
+  .unico-item > picture > img {
+    width: 206px;
+    height: 160px;
+    margin-bottom: 36px;
+  }
+}
