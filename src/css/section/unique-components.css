@@ -1,0 +1,23 @@
+.unico-title {
+  text-transform: uppercase;
+}
+
+.unico-text {
+}
+
+.unico-list {
+}
+
+.unico-item {
+  width: 335px;
+  height: 270px;
+  border: 1px solid teal;
+  border-radius: 15px;
+}
+.unico-item > picture > img {
+  margin: auto;
+}
+
+.unico-card {
+  display: none;
+}
