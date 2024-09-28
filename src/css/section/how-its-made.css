@@ -3,7 +3,6 @@
 }
 iframe{
    width: 100%;
-   max-width: 335px;
    height: 500px;
    border-radius: 15px;
    margin-bottom: 40px;
@@ -28,7 +27,7 @@ iframe{
 }
 .rezept-list{
    padding: 0px 0px 0px 14px;
-   margin: 20px 0px 0px 0px;
+   margin-bottom: 20px;
 }
 .point-rezept{
    list-style-image: url(../../img/marker.svg);
@@ -41,4 +40,36 @@ iframe{
 }
 .point-rezept:not(:last-child){
    margin-bottom: 18px;
+}
+
+@media (min-width:768px){
+   .how-its-made{
+      margin-bottom: 100px;
+   }
+   iframe{
+      height: 400px;
+   }
+   .section-title{
+      margin: 0px 0px 50px 0px;
+      font-size: 24px;
+      line-height: 28px;
+   }
+   .title-rezept{
+      max-width: 350px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+   }
+   .rezept-list{
+      margin-top: 28px;
+   }
+   .rezept{
+      max-width: 550px;
+      margin-left: 32px;
+      padding-right: 70px;
+   }
+}
+
+@media (min-width:1200px){
+   
 }

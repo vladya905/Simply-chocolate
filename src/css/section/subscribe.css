@@ -1,11 +1,9 @@
-.subscribe{
 
-}
-.sub-bg {
+.subscribe {
    background-image: url(../../img/subscribe/sub-mob@1x.jpg);
    background-repeat: no-repeat;
    background-position: center;
-   background-size: cover;
+   background-size: 100%;
 }
 .sub-main {
    text-align: center;
@@ -29,4 +27,32 @@
    line-height: 18px;
    letter-spacing: -0.02em;
    color: var(--color-white);
+}
+
+@media (min-width:768px){
+   .subscribe{
+      height: 370px;
+      background-image: url(../../img/subscribe/sub-tablet@1x.jpg);
+   }
+   @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../../img/subscribe/sub-tablet@2x.jpg);
+    }
+   }
+}
+
+
+@media (min-width:1200px){
+   .subscribe{
+      background-image: url(../../img/subscribe/sub-desk@1x.jpg);
+   }
+   @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../../img/subscribe/sub-desk@2x.jpg);
+    }
+   }
 }
