@@ -52,16 +52,20 @@ img {
   pointer-events: none;
   transform: opacity(0);
 }
+section {
+  margin-bottom: 72px;
+}
 
-@media screen and (min-width: 375px) {
-  .container {
-    outline: 1px solid red;
-    width: 335px;
-    margin: auto;
-  }
+.container {
+  outline: 1px solid red;
+  width: 335px;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
+  section {
+    margin-bottom: 100px;
+  }
   .container {
     width: 704px;
   }
@@ -70,5 +74,8 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1136px;
+  }
+  section {
+    margin-bottom: 128px;
   }
 }
