@@ -38,3 +38,29 @@
    letter-spacing: -0.02em;
    color: var(--color-white-70); /* 50 */
 }
+
+
+@media (min-width:768px){
+   .advantages{
+      padding: 50px 0px;
+      margin-bottom: 100px;
+   }
+   .advantages-list{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .advantages-list-item{
+      max-width: 336px;
+      margin-bottom: 35px;
+   }
+   .advantages-list-item:nth-child(2){
+      margin-left: 32px;
+   }
+   .advantages-descr{
+      margin: 0;
+   }
+}
+
+@media (min-width:1200px){
+
+}
