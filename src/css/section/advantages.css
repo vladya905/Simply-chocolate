@@ -62,5 +62,18 @@
 }
 
 @media (min-width:1200px){
-
+   .advantages-list{
+      position: relative;
+      justify-content: space-between;
+   }
+   .advantages-list-item:not(:last-child):after{
+      content: "";
+      position: absolute;
+      margin-left: 340px;
+      top: 50px;
+      width: 1px;
+      height: 124px;
+      text-align: right;
+      background-color: var(--color-white-70); /*50*/
+   }     /* ?!?!?!?!? */
 }

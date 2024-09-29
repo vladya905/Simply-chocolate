@@ -18,7 +18,12 @@ iframe{
    text-align: center;
    text-transform: uppercase;
 }
-
+.title-rezept{
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 24px;
+   margin-bottom: 20px;
+}
 .title-wort{
    color: var(--color-orange);
 }
@@ -71,5 +76,7 @@ iframe{
 }
 
 @media (min-width:1200px){
-   
+   .how-its-made-main{
+      display: flex;
+   }
 }
