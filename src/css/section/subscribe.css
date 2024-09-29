@@ -37,7 +37,7 @@
    @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .overlay {
+    .subscribe {
       background-image: url(../../img/subscribe/sub-tablet@2x.jpg);
     }
    }
@@ -51,7 +51,7 @@
    @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .overlay {
+    .subscribe {
       background-image: url(../../img/subscribe/sub-desk@2x.jpg);
     }
    }
