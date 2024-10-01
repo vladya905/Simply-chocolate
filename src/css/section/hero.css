@@ -23,6 +23,9 @@
   letter-spacing: -0.03em;
   color: var(--color-white);
 }
+.hero-subtitle br{
+  display: none;
+}
 .elements-hero-box {
   display: flex;
   gap: 14px;
@@ -102,6 +105,10 @@
     max-width: 484px;
     font-size: 28px;
     line-height: 121%;
+    letter-spacing: -0.03em;
+  }
+  .hero-subtitle br{
+    display: block;
   }
   .hero-elements {
     display: flex;
@@ -128,7 +135,7 @@
 @media (min-width: 1200px) {
   .overlay {
     height: 600px;
-    background-image: linear-gradient (180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../img/hero/hero-desk@1x.jpg);
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.4) 0%, rgba(17, 17, 17, 0.4) 100%), url(../../img/hero/hero-desk@1x.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
