@@ -70,6 +70,9 @@
     position: relative;
     justify-content: space-between;
   }
+  .advantages-list-item{
+    padding-right: 18px;
+  }
   .advantages-list-item:not(:last-child):after {
     content: '';
     position: absolute;
