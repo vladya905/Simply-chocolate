@@ -57,7 +57,7 @@ section {
 }
 
 .container {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 335px;
   margin: auto;
 }
@@ -78,6 +78,9 @@ section {
   text-transform: uppercase;
   text-align: center;
   margin: auto;
+}
+.sec-title > span {
+  color: var(--color-orange);
 }
 
 @media screen and (min-width: 768px) {
