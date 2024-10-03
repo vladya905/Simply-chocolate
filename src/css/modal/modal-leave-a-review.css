@@ -6,6 +6,7 @@
    height: 100%;
    opacity: 1;
    overflow-y: scroll;
+   background-color: rgba(77, 77, 77, 0.7);
 }
 
 .backdrop.is-hidden {
@@ -47,7 +48,11 @@
    text-align: left;
    margin-bottom: 32px;
 }
-
+.review-form{
+   font-size: 14px;
+   line-height: 17px;
+   letter-spacing: -0.02em;
+}
 .form-field {
    position: relative;
    display: flex;
@@ -66,6 +71,29 @@
 .input-review::placeholder{
    color: var(--color-placeholder);
 }
+.svg-flag{
+   position: absolute;
+   top: 25%;
+   left: 18px;
+}
+.input-tel{
+   padding: 10px 29px 10px 106px;
+}
+.tel-label{
+   position: absolute;
+   top: 33%;
+   left: 50px;
+}
+.tel-label::after{
+   content: '';
+   position: absolute;
+   margin-left: 8px;
+   top: -5px;
+   width: 1px;
+   height: 25px;
+   text-align: right;
+   background-color: var(--color-placeholder);
+}
 .comment-form{
    position: relative;
    display: flex;
@@ -79,30 +107,61 @@
    outline: 0;
    box-shadow: 0px 5px 5px #00000008;
    height: 91px;
+   width: 263px;
+   resize: none;
 }
 .comment-form-rev::placeholder{
    color: var(--color-placeholder);
 }
-.svg-form{
-   position: absolute;
-   top: 25%;
-   left: 18px;
-}
-.input-tel{
-   padding: 10px 29px 10px 106px;
-}
-.tel-label{
-   position: absolute;
-   top: 25%;
-   left: 50px;
-}
-.tel-label::after{
-   content: '';
-   position: absolute;
-   margin-left: 8px;
-   top: 0px;
-   width: 1px;
-   height: 25px;
-   text-align: right;
-   background-color: var(--color-placeholder);
+
+
+@media (min-width:768px){
+   .modal-rev-title br{
+      display: none;
+   }
+   .modal-rev-title{
+      max-width: 300px;
+      text-align: left;
+      margin: 0px 0px 40px 0px;
+   }
+   .order-modal{
+      max-width: 517px;
+      max-height: 631px;
+      padding: 40px;
+   }
+   .close-btn{
+      margin: 24px 24px 0px 0px;
+   }
+   .review-form{
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+   }
+   .form-field{
+      margin-bottom: 19px;
+   }
+   .input-review{
+      padding: 22px 24px;
+      height: 66px;
+   }
+   .comment-form-rev{
+      width: 437px;
+      height: 137px;
+   }
+   .input-tel{
+      padding: 21px 23px 21px 177px;
+   }
+   .tel-label{
+      left: 70px;
+   }
+   .tel-label::after{
+      top: -5px;
+      height: 32px;
+      margin-left: 20px;
+   }
+   .svg-flag{
+      left: 24px;
+      width: 32px;
+      height: 32px;
+   }
 }
