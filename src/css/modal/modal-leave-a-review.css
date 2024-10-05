@@ -37,6 +37,7 @@
    margin: 14px 14px 0px 0px;
    border: none;
    background-color: var(--main-background-color);
+   cursor: pointer;
 }
 .svg-close{
    stroke: var(--color-black);

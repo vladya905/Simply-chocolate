@@ -69,6 +69,7 @@ section {
   font-weight: 600;
   font-size: 14px;
   border: none;
+  cursor: pointer;
 }
 .sec-title {
   font-weight: 600;
