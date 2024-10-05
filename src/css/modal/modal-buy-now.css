@@ -26,7 +26,10 @@
    align-items: center;
    border-radius: 15px;
    border: 1px solid #1111111a;
-   background-color: var(--color-white) ;
+   background-color: var(--color-white);
+}
+.twohundred, .threehundred{
+   display: none;
 }
 .modal-buy-gram{
    color: var(--color-black);
@@ -40,6 +43,9 @@
    display: flex;
    flex-direction: column;
    margin-bottom: 18px;
+}
+.pers-info input{
+   width: 100%;
 }
 .form-field-buynow #name{
    margin-bottom: 14px;
@@ -62,6 +68,20 @@
    top: 17%;
    right: 16px;
 }
+.comment-buy{
+   padding: 14px 18px;
+   margin-bottom: 18px;
+   border: 1.5px solid var(--color-input-border);
+   border-radius: 8px;
+   outline: 0;
+   box-shadow: 0px 5px 5px #00000008;
+   height: 91px;
+   width: 263px;
+   resize: none;
+}
+.comment-buy::placeholder{
+   color: var(--color-placeholder);
+}
 
 @media (min-width:768px){
    .modal-buynow{
@@ -69,17 +89,35 @@
       max-height: 1058px;
       padding: 48px;
    }
-   .comment-form-rev{
-      width: 437px;
+   .list-gram{
+      display: grid;
+      grid-template-columns: 160px 160px 160px;
+      grid-gap: 16px;
+      margin: 0px 0px 40px 0px;      
+   }
+   .twohundred, .threehundred{
+      display: flex;
+      align-items: center;
+   }
+   .comment-buy{
+      width: 513px;
       height: 137px;
    }
    .input-tel{
       padding: 21px 23px 21px 177px;
    }
-   
    .svg-flag{
       left: 24px;
       width: 32px;
       height: 32px;
+   }
+   .pers-info{
+      display: grid;
+      grid-template-columns: 244px 244px;
+      grid-gap: 0px 21px;
+   }
+   .label-buy{
+      font-size: 14px;
+      line-height: 18px;
    }
 }
