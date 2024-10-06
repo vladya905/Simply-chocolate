@@ -70,6 +70,12 @@ section {
   font-size: 14px;
   border: none;
   cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover,
+.btn:focus{
+  background-color: var(--color-orange-light);
+  color: var(--color-orange);
 }
 .sec-title {
   font-weight: 600;

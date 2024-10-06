@@ -99,3 +99,16 @@
       line-height: 20px;
    }
 } 
+
+@media (min-width: 1200px) {
+   .explore-modal-bg {
+     background-image: url(../../img/modal/explore/explore-desk@1x.jpg);
+   }
+   @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+     .explore-modal-bg {
+       background-image: url(../../img/modal/explore/explore-desk@2x.jpg);
+     }
+   }
+}
