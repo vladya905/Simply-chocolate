@@ -89,7 +89,9 @@
   max-width: 100%;
   max-height: 100vh;
 }
-
+.swiper-pagination.byunow-pagination {
+  margin-top: 0;
+}
 @media (min-width: 768px) {
   .modal-buynow {
     max-width: 609px;
