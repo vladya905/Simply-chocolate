@@ -1,0 +1,101 @@
+.modal-explore{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   min-width: 311px;
+   min-height: 350px;
+   background-color: var(--main-background-color);
+   border-radius: 15px;
+}
+.modal-explore .close-btn{
+   background-color: transparent;
+}
+.modal-explore .svg-close{
+   stroke: var(--color-white);
+}
+.explore-modal-bg{
+   height: 169px;
+   background-image: url(../../img/modal/explore/explore-mob@1x.jpg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   border-radius: 15px 15px 0px 0px;
+}
+.explore-items{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   margin: 32px 24px 0px 24px;
+}
+.modal-explore-title{
+   text-align: left;
+   margin-bottom: 24px;
+}
+.explore-form{
+   position: relative;
+   display: flex;
+   font-size: 14px;
+   line-height: 17px;
+   letter-spacing: -0.02em;
+}
+.input-explore{
+   position: absolute;
+   padding: 14px 18px;
+   border: 1.5px solid var(--color-input-border);
+   border-radius: 25px;
+   outline: 0;
+   box-shadow: 0px 5px 5px #00000008;
+   height: 45px;
+   z-index: 1;
+}
+.modal-sub-btn{
+   padding: 14px 22px;
+   position: absolute;
+   z-index: 2;
+   right: 0;
+   line-height: 17px;
+   cursor: pointer;
+}
+
+@media (max-width:767px){
+   @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+     .explore-modal-bg {
+      background-image: url(../../img/modal/explore/explore-mob@2x.jpg);
+     }
+   }
+ }
+ 
+ @media (min-width: 768px) {
+   .explore-modal-bg {
+     height: 196px;
+     background-image: url(../../img/modal/explore/explore-tab@1x.jpg);
+   }
+   @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+     .explore-modal-bg {
+       background-image: url(../../img/modal/explore/explore-tab@2x.jpg);
+     }
+   }
+   .modal-explore{
+      min-width: 538px;
+      min-height: 412px;
+   }
+   .explore-items{
+      margin: 40px 40px 0px 40px;
+   }
+   .modal-explore-title{
+      margin: 0px 0px 28px 0px;
+   }
+   .input-explore{
+      padding: 14px 24px;
+      height: 52px;
+      width: calc(100% - (137px + 8px));
+   }
+   .modal-sub-btn{
+      padding: 16px 42px;
+      line-height: 20px;
+   }
+} 
