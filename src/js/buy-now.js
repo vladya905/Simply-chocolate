@@ -1,11 +1,11 @@
 const refs = {
-  openMenuBtn: document.querySelector('[data-buynow-open]'),
-  closeMenuBtn: document.querySelector('[data-buynow-close]'),
+  openModalBtn: document.querySelector('[data-buynow-open]'),
+  closeModalBtn: document.querySelector('[data-buynow-close]'),
   menu: document.querySelector('[data-buynow]'),
 };
-refs.openMenuBtn.addEventListener('click', toggleMenu);
-refs.closeMenuBtn.addEventListener('click', toggleMenu);
-function toggleMenu() {
+refs.openModalBtn.addEventListener('click', toggleModal);
+refs.closeModalBtn.addEventListener('click', toggleModal);
+function toggleModal() {
   refs.menu.classList.toggle('is-hidden');
   document.body.classList.toggle('no-scroll');
 };

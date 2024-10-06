@@ -1,124 +1,137 @@
 .backdrop.is-hidden .modal-buynow {
-   transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.modal-buynow{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   max-width: 311px;
-   max-height: 1007px;
-   padding: 32px 24px;
-   background-color: var(--main-background-color);
-   border-radius: 15px;
+.modal-buynow {
+  position: absolute;
+  max-width: 311px;
+  max-height: 1007px;
+  padding: 32px 24px;
+  background-color: var(--main-background-color);
+  border-radius: 15px;
 }
-.modal-buy-title{
-   margin-bottom: 32px
+.modal-buy-title {
+  margin-bottom: 32px;
 }
-.list-gram{
-   margin: 0px 16px;
-   margin-bottom: 32px;
+.list-gram {
+  margin: 0px 16px;
+  margin-bottom: 32px;
 }
-.gram-item{
-   padding-top: 32px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   border-radius: 15px;
-   border: 1px solid #1111111a;
-   background-color: var(--color-white);
+.gram-item {
+  width: 230px;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #1111111a;
+  background-color: var(--color-white);
 }
-.twohundred, .threehundred{
-   display: none;
+.twohundred,
+.threehundred {
+  overflow: hidden;
 }
-.modal-buy-gram{
-   color: var(--color-black);
-   padding: 8px 29px;
-   border: 1px solid #1111111a;
-   background-color: #f9f9f9;
-   margin: 16px 0px 28px 0px;
-   cursor: pointer;
+.modal-buy-gram {
+  color: var(--color-black);
+  padding: 8px 29px;
+  border: 1px solid #1111111a;
+  background-color: #f9f9f9;
+  margin: 16px 0px 28px 0px;
+  cursor: pointer;
 }
 .form-field-buynow {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   margin-bottom: 18px;
+  margin-top: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
 }
-.pers-info input{
-   width: 100%;
+.pers-info input {
+  width: 100%;
 }
-.form-field-buynow #name{
-   margin-bottom: 14px;
+.form-field-buynow #name {
+  margin-bottom: 14px;
 }
-.form-field-buynow .tel-label{
-   top: 55%;
+.form-field-buynow .tel-label {
+  top: 55%;
 }
-.form-field-buynow .svg-flag{
-   top: 50%;
+.form-field-buynow .svg-flag {
+  top: 50%;
 }
-.label-buy{
-   margin-bottom: 8px;
-   font-weight: 500;
-   font-size: 12px;
-   line-height: 14px;
-   letter-spacing: -0.02em;
+.label-buy {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
 }
-.svg-card{
-   position: absolute;
-   top: 17%;
-   right: 16px;
+.svg-card {
+  position: absolute;
+  top: 17%;
+  right: 16px;
 }
-.comment-buy{
-   padding: 14px 18px;
-   margin-bottom: 18px;
-   border: 1.5px solid var(--color-input-border);
-   border-radius: 8px;
-   outline: 0;
-   box-shadow: 0px 5px 5px #00000008;
-   height: 91px;
-   width: 263px;
-   resize: none;
+.comment-buy {
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border: 1.5px solid var(--color-input-border);
+  border-radius: 8px;
+  outline: 0;
+  box-shadow: 0px 5px 5px #00000008;
+  height: 91px;
+  width: 263px;
+  resize: none;
 }
-.comment-buy::placeholder{
-   color: var(--color-placeholder);
+.comment-buy::placeholder {
+  color: var(--color-placeholder);
+}
+.swiper-bynow {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
 }
 
-@media (min-width:768px){
-   .modal-buynow{
-      max-width: 609px;
-      max-height: 1058px;
-      padding: 48px;
-   }
-   .list-gram{
-      display: grid;
-      grid-template-columns: 160px 160px 160px;
-      grid-gap: 16px;
-      margin: 0px 0px 40px 0px;      
-   }
-   .twohundred, .threehundred{
-      display: flex;
-      align-items: center;
-   }
-   .comment-buy{
-      width: 513px;
-      height: 137px;
-   }
-   .input-tel{
-      padding: 21px 23px 21px 177px;
-   }
-   .svg-flag{
-      left: 24px;
-      width: 32px;
-      height: 32px;
-   }
-   .pers-info{
-      display: grid;
-      grid-template-columns: 244px 244px;
-      grid-gap: 0px 21px;
-   }
-   .label-buy{
-      font-size: 14px;
-      line-height: 18px;
-   }
+@media (min-width: 768px) {
+  .modal-buynow {
+    max-width: 609px;
+    max-height: 1058px;
+    padding: 48px;
+  }
+  .form-field-buynow {
+    margin-top: 0;
+  }
+  .list-gram {
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    grid-gap: 16px;
+    margin: 0px 0px 40px 0px;
+  }
+  .twohundred,
+  .threehundred {
+    display: flex;
+    align-items: center;
+  }
+  .gram-item {
+    width: 160px;
+  }
+  .comment-buy {
+    width: 513px;
+    height: 137px;
+  }
+  .input-tel {
+    padding: 21px 23px 21px 177px;
+  }
+  .svg-flag {
+    left: 24px;
+    width: 32px;
+    height: 32px;
+  }
+  .pers-info {
+    display: grid;
+    grid-template-columns: 244px 244px;
+    grid-gap: 0px 21px;
+  }
+  .label-buy {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
