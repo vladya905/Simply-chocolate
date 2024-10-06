@@ -39,6 +39,12 @@
    margin: 16px 0px 28px 0px;
    cursor: pointer;
 }
+.modal-buy-gram:hover,
+.modal-buy-gram:focus{
+   background-color: #f9f9f9;
+   transform: scale(1.1);
+   color: var(--color-black);
+}
 .form-field-buynow {
    position: relative;
    display: flex;
