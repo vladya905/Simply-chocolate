@@ -15,7 +15,7 @@
     />
     <script type="module" crossorigin src="/Simply-chocolate/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Simply-chocolate/assets/vendor-DhL-EaBS.js">
-    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-DoHYpTwY.css">
+    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-bmorw7ZG.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -860,13 +860,30 @@
       <div class="comment-form">
         <textarea required name="comment" placeholder="Enter text" class="comment-form-rev"></textarea>
       </div>
-      <button type="submit" class="btn">Send</button>
+      <button type="submit" class="btn" data-submit>Send</button>
     </form>
   </div>
 </div>
 
     
-    
+    <div class="backdrop is-hidden" data-feedback-backdrop>
+  <div class="modal-feedback is-hidden" data-feedback-modal>
+    <button type="button" class="feedback-close-btn" data-feedback-close>
+      <svg width="16px" height="16px" class="feedback-close-ico">
+        <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#close-big"></use>
+      </svg>
+    </button>
+    <h3 class="feedback-title">
+      thank you <br />
+      for your feedback!
+    </h3>
+    <p class="feedback-text">
+      We are so happy to hear <br />
+      from you!
+    </p>
+  </div>
+</div>
+
     <div class="backdrop is-hidden" data-explore-backdrop>
   <div class="modal-explore is-hidden" data-explore>
     <div class="explore-modal-bg"></div>
