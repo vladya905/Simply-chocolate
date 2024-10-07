@@ -15,7 +15,7 @@
     />
     <script type="module" crossorigin src="/Simply-chocolate/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Simply-chocolate/assets/vendor-DhL-EaBS.js">
-    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-bmorw7ZG.css">
+    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-CwDZfIqj.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -801,25 +801,30 @@
       <div class="form-field-buynow">
         <label for="name" class="label-buy">Personal information</label>
         <div class="pers-info">
-          <input required type="text" name="name" id="name" class="input-review" placeholder="Name"/>
-          <input  type="text" name="surname" class="input-review" placeholder="Surname"/>
+          <input required type="text" name="name" id="name" class="input-review" 
+            placeholder="Name" pattern="[A-z]{1,15}"/>
+          <input required type="text" name="surname" class="input-review" 
+            placeholder="Surname" pattern="[A-z]{1,15}" />
         </div>
       </div>
       <div class="form-field-buynow">
         <label for="email" class="label-buy">Email</label>
-        <input required type="email" name="email" id="email" class="input-review" placeholder="Enter your email"/>
+        <input required type="email" name="email" id="email" class="input-review" 
+          placeholder="Enter your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
       </div>
       <div class="form-field-buynow">
         <label for="tel" class="label-buy">Phone number</label>
         <label for="tel" class="tel-label">+380</label>
-        <input required type="tel" name="tel" id="tel" class="input-review input-tel" placeholder="Phone number" maxlength="9"/>
+        <input required type="tel" name="tel" id="tel" class="input-review input-tel" 
+          placeholder="Phone number" maxlength="9" pattern="\+?[0-9\s\-\(\)]+"/>
         <svg width="24px" height="24px" class="svg-flag">
           <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#flag"></use>
         </svg>
       </div>
       <div class="form-field-buynow">
         <label for="card" class="label-buy">Card number</label>
-        <input required type="tel" name="tel" id="card" class="input-review input-card" placeholder="Enter card" maxlength="16"/>
+        <input required type="tel" name="tel" id="card" class="input-review input-card" 
+            placeholder="Enter card" maxlength="16" pattern="\+?[0-9]+"/>
         <svg width="44px" height="30px" class="svg-card">
           <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#mastercard"></use>
         </svg>
@@ -845,14 +850,17 @@
     </h3>
     <form class="review-form" autocomplete="off">
       <div class="form-field">
-        <input required type="text" name="name" class="input-review" placeholder="Name"/>
+        <input required type="text" name="name" class="input-review" 
+          placeholder="Name" pattern="[A-z]{1,15}"/>
       </div>
       <div class="form-field">
-        <input required type="email" name="email" class="input-review" placeholder="Enter your email"/>
+        <input required type="email" name="email" class="input-review" 
+          placeholder="Enter your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
       </div>
       <div class="form-field">
         <label for="tel" class="tel-label">+380</label>
-        <input  required type="tel" name="tel" id="tel" class="input-review input-tel" placeholder="Phone number" maxlength="9"/>
+        <input  required type="tel" name="tel" id="tel" class="input-review input-tel" 
+          placeholder="Phone number" maxlength="9" pattern="\+?[0-9\s\-\(\)]+"/>
         <svg width="24px" height="24px" class="svg-flag">
           <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#flag"></use>
         </svg>
@@ -897,7 +905,8 @@
         Explore our <br /><span>new chocolate</span> first!
       </h3>
       <form class="explore-form" autocomplete="off">
-        <input required type="email" name="email" class="input-explore" placeholder="Enter your email"/>
+        <input required type="email" name="email" class="input-explore" 
+          placeholder="Enter your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
         <button type="submit" class="btn modal-sub-btn">Submit</button>
       </form>
     </div>
