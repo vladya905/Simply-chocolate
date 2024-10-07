@@ -10,14 +10,17 @@
     </h3>
     <form class="review-form" autocomplete="off">
       <div class="form-field">
-        <input required type="text" name="name" class="input-review" placeholder="Name"/>
+        <input required type="text" name="name" class="input-review" 
+          placeholder="Name" pattern="[A-z]{1,15}"/>
       </div>
       <div class="form-field">
-        <input required type="email" name="email" class="input-review" placeholder="Enter your email"/>
+        <input required type="email" name="email" class="input-review" 
+          placeholder="Enter your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
       </div>
       <div class="form-field">
         <label for="tel" class="tel-label">+380</label>
-        <input  required type="tel" name="tel" id="tel" class="input-review input-tel" placeholder="Phone number" maxlength="9"/>
+        <input  required type="tel" name="tel" id="tel" class="input-review input-tel" 
+          placeholder="Phone number" maxlength="9" pattern="\+?[0-9\s\-\(\)]+"/>
         <svg width="24px" height="24px" class="svg-flag">
           <use href="./img/sprite.svg#flag"></use>
         </svg>
