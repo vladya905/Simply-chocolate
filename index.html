@@ -9,12 +9,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script type="module" crossorigin src="/Simply-chocolate/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-BQ022iRa.css">
+    <link rel="modulepreload" crossorigin href="/Simply-chocolate/assets/vendor-DhL-EaBS.js">
+    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-DBqCEY0F.css">
   </head>
   <body>
     <header class="header" id="header">
-     <div class="container header-container">
+  <div class="container header-container">
     <a href="../index.html" class="logo">
       <span class="logo-start">simply &nbsp;</span> chocolate
       <svg class="logo-ico">
@@ -22,62 +27,75 @@
       </svg>
     </a>
     <div class="header-menu is-hidden" data-menu>
-        <button type="button" class="menu-close" data-menu-close><svg class="close-ico">
+      <button type="button" class="menu-close" data-menu-close>
+        <svg class="close-ico">
           <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#close-small"></use>
-        </svg></button>
-        <nav class="header-nav">
-      <ul class="header-nav-list">
-        <li class="header-nav-item"><a class="nav-link" href="">Home</a></li>
-        <li class="header-nav-item"><a class="nav-link" href="">How it&#39;s made?</a></li>
-        <li class="header-nav-item"><a class="nav-link" href="">Our products</a></li>
-        <li class="header-nav-item"><a class="nav-link" href="">Top sellers</a></li>
-        <li class="header-nav-item"><a class="nav-link" href="">Chocolate is loved</a></li>
-      </ul>
-    </nav>
-    <address class="soc-link">
-      <ul>
-        <li>
-          <a href="">
-            <svg class="soc-ico">
-              <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#instagram-mob"></use>
-            </svg>
-          </a>
-        </li>
-        <li><a href=""></a>
-            <svg class="soc-ico">
-              <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#twitter-mob"></use>
-            </svg>
-          </a></li>
-      </ul>
-    </address>
-</div>
-    
-    <button type="button" class="burger-menu" data-menu-open>
-        <svg class="burger-ico">
-            <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#menu-small"></use>
         </svg>
+      </button>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="nav-link" href="#how-its-made">How it&#39;s made?</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="nav-link" href="#our-products">Our products</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="nav-link" href="#top-sellers">Top sellers</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="nav-link" href="#reviews">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="soc-link">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/">
+              <svg class="soc-ico">
+                <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#instagram-mob"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https:/x.com/">
+              <svg class="soc-ico">
+                <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#twitter-mob"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+    </div>
+
+    <button type="button" class="burger-menu" data-menu-open>
+      <svg class="burger-ico">
+        <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#menu-small"></use>
+      </svg>
     </button>
-    
   </div>
- 
 </header>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      <section>
+      <section id="hero">
   <div class="container overlay">
     <div class="hero-main">
       <h1 class="title is-hidden">Hero</h1>
       <h2 class="hero-subtitle">
-        Treat yourself or a loved one to <br>our finest ingredients for a moment <br>of pure delight!
+        Treat yourself or a loved one to <br />our finest ingredients for a
+        moment <br />of pure delight!
       </h2>
       <div class="hero-elements">
         <div class="elements-hero-box">
           <button type="button" class="btn" data-buynow-open>Buy now</button>
-          <a href="./how-its-made.html" class="how-link">How it&#39;s made</a>
+          <a href="#how-its-made" class="how-link">How it&#39;s made</a>
         </div>
-        <a href="#" class="arrow-link">
+        <a href="#footer" class="arrow-link">
           scroll down
           <div class="arrow-svg-box">
             <svg width="16px" height="16px" class="arrow-svg">
@@ -173,7 +191,24 @@
           />
         </picture>
         <p class="unico-descr">milk chocolate</p>
-        <div class="unico-card"></div>
+        <div class="unico-card">
+          <h3 class="unico-card-title">milk chocolate</h3>
+          <div class="btn-wrap">
+            <button type="button" class="btn card-btn">chocolate</button>
+            <button type="button" class="btn card-btn card-btn-sec">
+              the benefits
+            </button>
+          </div>
+
+          <p class="card-text">
+            Milk chocolate is a solid chocolate confectionery containing cocoa,
+            sugar and milk. It is the most consumed type of chocolate. Chocolate
+            was originally sold and consumed as a beverage in pre-Columbian
+            times. Although four-fifths of all milk chocolate is sold in the
+            United States and Europe, increasingly large amounts are consumed in
+            China and Latin America.
+          </p>
+        </div>
       </li>
       <li class="unico-item">
         <picture>
@@ -192,7 +227,25 @@
           <img src="/Simply-chocolate/assets/milk-desk@1x-wMkIb6Oc.png" alt="chocolate" />
         </picture>
         <p class="unico-descr">milk</p>
-        <div class="unico-card"></div>
+        <div class="unico-card">
+          <h3 class="unico-card-title">milk</h3>
+          <div class="btn-wrap">
+            <button type="button" class="btn card-btn">milk</button>
+            <button type="button" class="btn card-btn card-btn-sec">
+              the benefits
+            </button>
+          </div>
+
+          <p class="card-text">
+            Milk is a white liquid food produced by the mammary glands of
+            mammals. It is the primary source of nutrition for young mammals
+            (including breastfed human infants) before they are able to digest
+            solid food.Early-lactation milk, which is called colostrum, contains
+            antibodies that strengthen the immune system, and thus reduces the
+            risk of many diseases. Milk contains many nutrients, including
+            protein and lactose.
+          </p>
+        </div>
       </li>
       <li class="unico-item">
         <picture>
@@ -211,7 +264,24 @@
           <img src="/Simply-chocolate/assets/nuts-desk@1x-BC1QGRcv.png" alt="chocolate" />
         </picture>
         <p class="unico-descr">nuts</p>
-        <div class="unico-card"></div>
+        <div class="unico-card">
+          <h3 class="unico-card-title">nuts</h3>
+          <div class="btn-wrap">
+            <button type="button" class="btn card-btn">nuts</button>
+            <button type="button" class="btn card-btn card-btn-sec">
+              the benefits
+            </button>
+          </div>
+
+          <p class="card-text">
+            Almonds, pistachios, and walnuts are some types of nuts that contain
+            healthy nutrients. When eaten as part of a nutrient-dense diet,
+            these 9 nuts may offer benefits such as reducing your risk of heart
+            disease. They’re a good source of fiber, healthy fats, and plant
+            protein. Plus, they’re great on their own, paired with fruit, or
+            added to dishes like salads, desserts, and grains.
+          </p>
+        </div>
       </li>
       <li class="unico-item">
         <picture>
@@ -233,145 +303,196 @@
           />
         </picture>
         <p class="unico-descr">semi-sweet chocolate</p>
-        <div class="unico-card"></div>
+        <div class="unico-card">
+          <h3 class="unico-card-title">sweet chocolate</h3>
+          <div class="btn-wrap">
+            <button type="button" class="btn card-btn">sweet chocolate</button>
+            <button type="button" class="btn card-btn card-btn-sec">
+              the benefits
+            </button>
+          </div>
+
+          <p class="card-text">
+            Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of
+            the best ways to gain an understanding of this type of chocolate is
+            to compare it to a different type of chocolate. Semisweet is darker
+            than milk chocolate. In a taste comparison, it has a slightly bitter
+            taste whereas milk chocolate is sweeter and more mellow. This
+            delectable flavor of chocolate is very versatile.
+          </p>
+        </div>
       </li>
     </ul>
   </div>
 </section>
 
-      <section class="how-its-made">
-   <div class="container">
-      <h1 class="section-title">How it&#39;s <span class="title-wort">made?</span></h1>
-      <div class="how-its-made-main">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/ClWO74nUEdA?si=UpDyT2GbY2F6JUry" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         <div class="rezept">
-             <h3 class="title-rezept">Try  our chocolates today and discover the perfect balance of flavor</h3>
-             <ul class="rezept-list">
-               <li class="point-rezept">Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.</li>
-               <li class="point-rezept">At the same time, prepare a water bath. Melt the butter on it.</li>
-               <li class="point-rezept">"Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.</li>
-               <li class="point-rezept">Heat the mixture over low heat, letting it barely boil.</li>
-               <li class="point-rezept">Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.</li>
-             </ul>
-         </div>
+      <section class="how-its-made" id="how-its-made">
+  <div class="container">
+    <h1 class="section-title">
+      How it&#39;s <span class="title-wort">made?</span>
+    </h1>
+    <div class="how-its-made-main">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ClWO74nUEdA?si=UpDyT2GbY2F6JUry"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <div class="rezept">
+        <h3 class="title-rezept">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+        <ul class="rezept-list">
+          <li class="point-rezept">
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar
+            and cocoa powder.
+          </li>
+          <li class="point-rezept">
+            At the same time, prepare a water bath. Melt the butter on it.
+          </li>
+          <li class="point-rezept">
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly
+            with a silicone spatula so that the mass becomes uniform and silky.
+          </li>
+          <li class="point-rezept">
+            Heat the mixture over low heat, letting it barely boil.
+          </li>
+          <li class="point-rezept">
+            Pour the chocolate into special containers (can be replaced with ice
+            molds). Allow to cool and harden.
+          </li>
+        </ul>
       </div>
-   </div>
+    </div>
+  </div>
 </section>
-      <section>
+
+      <section id="our-products">
   <div class="container">
     <h2 class="product-title">our <span>products</span></h2>
-    <ul class="product-list">
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/prod1@1x-CdpCebuT.jpg 1x, /Simply-chocolate/assets/prod1@2x-k4aRBUhL.jpg 2x"
-          />
-          <img src="/Simply-chocolate/assets/prod1@1x-CdpCebuT.jpg" alt="orange" />
-        </picture>
-        <div class="product-wrap">
-          <h3 class="product-subtitle">orange</h3>
-          <p class="product-text">Dark chocolate</p>
-          <p class="product-price">45 uah</p>
-        </div>
-      </li>
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/prod2@1x-CHRguS_h.jpg 1x, /Simply-chocolate/assets/prod2@2x-DHu3EVWV.jpg 2x"
-          />
-          <img src="/Simply-chocolate/assets/prod2@1x-CHRguS_h.jpg" alt="apple&amp;cranberry" />
-        </picture>
-        <div class="product-wrap">
-          <h3 class="product-subtitle">apple&amp;cranberry</h3>
-          <p class="product-text">Milk chocolate</p>
-          <p class="product-price">50 uah</p>
-        </div>
-      </li>
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/prod3@1x-rv1amTPk.jpg 1x, /Simply-chocolate/assets/prod3@2x-DVJlIOMP.jpg 2x"
-          />
-          <img src="/Simply-chocolate/assets/prod3@1x-rv1amTPk.jpg" alt="lime&amp;sea sault" />
-        </picture>
-        <div class="product-wrap">
-          <h3 class="product-subtitle">lime&amp;sea sault</h3>
-          <p class="product-text">Dark chocolate</p>
-          <p class="product-price">66 uah</p>
-        </div>
-      </li>
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/prod4@1x-C3O0TJob.jpg 1x, /Simply-chocolate/assets/prod4@2x-DNv-CHAD.jpg 2x"
-          />
-          <img src="/Simply-chocolate/assets/prod4@1x-C3O0TJob.jpg" alt="pineapple" />
-        </picture>
-        <div class="product-wrap">
-          <h3 class="product-subtitle">pineapple</h3>
-          <p class="product-text">Dark chocolate</p>
-          <p class="product-price">54 uah</p>
-        </div>
-      </li>
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/prod5@1x-r0mzEGCw.jpg 1x, /Simply-chocolate/assets/prod5@2x-CQLSpFbh.jpg 2x"
-          />
-          <img src="/Simply-chocolate/assets/prod5@1x-r0mzEGCw.jpg" alt="classic" />
-        </picture>
-        <div class="product-wrap">
-          <h3 class="product-subtitle">classic</h3>
-          <p class="product-text">Milk chocolate</p>
-          <p class="product-price">45 uah</p>
-        </div>
-      </li>
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/prod6@1x-DebqxKWu.jpg 1x, /Simply-chocolate/assets/prod6@2x-BL0pAiN3.jpg 2x"
-          />
-          <img src="/Simply-chocolate/assets/prod6@1x-DebqxKWu.jpg" alt="honey" />
-        </picture>
-        <div class="product-wrap">
-          <h3 class="product-subtitle">honey</h3>
-          <p class="product-text">Milk chocolate</p>
-          <p class="product-price">50 uah</p>
-        </div>
-      </li>
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/prod7@1x-CCEgsYS-.jpg 1x, /Simply-chocolate/assets/prod7@2x-B56GF0pK.jpg 2x"
-          />
-          <img src="/Simply-chocolate/assets/prod7@1x-CCEgsYS-.jpg" alt="roasted fruits" />
-        </picture>
-        <div class="product-wrap">
-          <h3 class="product-subtitle">roasted fruits</h3>
-          <p class="product-text">Dark chocolate</p>
-          <p class="product-price">66 uah</p>
-        </div>
-      </li>
-      <li class="product-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/prod8@1x-DMRMHSXy.jpg 1x, /Simply-chocolate/assets/prod8@2x-kxTg8rQI.jpg 2x"
-          />
-          <img src="/Simply-chocolate/assets/prod8@1x-DMRMHSXy.jpg" alt="classic white" />
-        </picture>
-        <div class="product-wrap">
-          <h3 class="product-subtitle">classic</h3>
-          <p class="product-text">White chocolate</p>
-          <p class="product-price">54 uah</p>
-        </div>
-      </li>
-    </ul>
+    <div class="swiper">
+      <ul class="product-list swiper-wrapper">
+        <li class="product-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/prod1@1x-CdpCebuT.jpg 1x, /Simply-chocolate/assets/prod1@2x-k4aRBUhL.jpg 2x"
+            />
+            <img src="/Simply-chocolate/assets/prod1@1x-CdpCebuT.jpg" alt="orange" />
+          </picture>
+          <div class="product-wrap">
+            <h3 class="product-subtitle">orange</h3>
+            <p class="product-text">Dark chocolate</p>
+            <p class="product-price">45 uah</p>
+          </div>
+        </li>
+        <li class="product-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/prod2@1x-CHRguS_h.jpg 1x, /Simply-chocolate/assets/prod2@2x-DHu3EVWV.jpg 2x"
+            />
+            <img
+              src="/Simply-chocolate/assets/prod2@1x-CHRguS_h.jpg"
+              alt="apple&amp;cranberry"
+            />
+          </picture>
+          <div class="product-wrap">
+            <h3 class="product-subtitle">apple&amp;cranberry</h3>
+            <p class="product-text">Milk chocolate</p>
+            <p class="product-price">50 uah</p>
+          </div>
+        </li>
+        <li class="product-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/prod3@1x-rv1amTPk.jpg 1x, /Simply-chocolate/assets/prod3@2x-DVJlIOMP.jpg 2x"
+            />
+            <img
+              src="/Simply-chocolate/assets/prod3@1x-rv1amTPk.jpg"
+              alt="lime&amp;sea sault"
+            />
+          </picture>
+          <div class="product-wrap">
+            <h3 class="product-subtitle">lime&amp;sea sault</h3>
+            <p class="product-text">Dark chocolate</p>
+            <p class="product-price">66 uah</p>
+          </div>
+        </li>
+        <li class="product-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/prod4@1x-C3O0TJob.jpg 1x, /Simply-chocolate/assets/prod4@2x-DNv-CHAD.jpg 2x"
+            />
+            <img src="/Simply-chocolate/assets/prod4@1x-C3O0TJob.jpg" alt="pineapple" />
+          </picture>
+          <div class="product-wrap">
+            <h3 class="product-subtitle">pineapple</h3>
+            <p class="product-text">Dark chocolate</p>
+            <p class="product-price">54 uah</p>
+          </div>
+        </li>
+        <li class="product-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/prod5@1x-r0mzEGCw.jpg 1x, /Simply-chocolate/assets/prod5@2x-CQLSpFbh.jpg 2x"
+            />
+            <img src="/Simply-chocolate/assets/prod5@1x-r0mzEGCw.jpg" alt="classic" />
+          </picture>
+          <div class="product-wrap">
+            <h3 class="product-subtitle">classic</h3>
+            <p class="product-text">Milk chocolate</p>
+            <p class="product-price">45 uah</p>
+          </div>
+        </li>
+        <li class="product-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/prod6@1x-DebqxKWu.jpg 1x, /Simply-chocolate/assets/prod6@2x-BL0pAiN3.jpg 2x"
+            />
+            <img src="/Simply-chocolate/assets/prod6@1x-DebqxKWu.jpg" alt="honey" />
+          </picture>
+          <div class="product-wrap">
+            <h3 class="product-subtitle">honey</h3>
+            <p class="product-text">Milk chocolate</p>
+            <p class="product-price">50 uah</p>
+          </div>
+        </li>
+        <li class="product-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/prod7@1x-CCEgsYS-.jpg 1x, /Simply-chocolate/assets/prod7@2x-B56GF0pK.jpg 2x"
+            />
+            <img src="/Simply-chocolate/assets/prod7@1x-CCEgsYS-.jpg" alt="roasted fruits" />
+          </picture>
+          <div class="product-wrap">
+            <h3 class="product-subtitle">roasted fruits</h3>
+            <p class="product-text">Dark chocolate</p>
+            <p class="product-price">66 uah</p>
+          </div>
+        </li>
+        <li class="product-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/prod8@1x-DMRMHSXy.jpg 1x, /Simply-chocolate/assets/prod8@2x-kxTg8rQI.jpg 2x"
+            />
+            <img src="/Simply-chocolate/assets/prod8@1x-DMRMHSXy.jpg" alt="classic white" />
+          </picture>
+          <div class="product-wrap">
+            <h3 class="product-subtitle">classic</h3>
+            <p class="product-text">White chocolate</p>
+            <p class="product-price">54 uah</p>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
 </section>
 
-      <section class="top-sellers">
+      <section class="top-sellers" id="top-sellers">
   <div class="container">
     <h1 class="section-title"><span class="title-wort">Top</span> sellers</h1>
     <div class="sellers-main">
@@ -435,91 +556,97 @@
   </div>
 </section>
 
-      <section>
+      <section id="reviews">
   <div class="container">
     <h2 class="sec-title"><span>chocolate</span> is loved</h2>
-    <ul class="review-cards">
-      <li class="review-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/victoria@1x-azNZ_NbC.png 1x, /Simply-chocolate/assets/victoria@2x-DTjiZSaa.png 2x"
-          />
-          <img src="/Simply-chocolate/assets/victoria@1x-azNZ_NbC.png" alt="victoria" />
-        </picture>
-        <h3 class="revier">Victoria Dobrzhanska</h3>
-        <p class="review-text">
-          I love this chocolate bar. Perfect combination of light crispy wafer,
-          covered in a thin layer chocolate.
-        </p>
-      </li>
-      <li class="review-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/nazar@1x-DGOgUH7d.png 1x, /Simply-chocolate/assets/nazar@2x-DJOexABF.png 2x"
-          />
-          <img src="/Simply-chocolate/assets/nazar@1x-DGOgUH7d.png" alt="nazar" />
-        </picture>
-        <h3 class="revier">Nazar Babenko</h3>
-        <p class="review-text">
-          This chocolate confection is a delight! A delight! The wafer is light
-          and crisp, the hazelnut cream is smooth, and the chocolate is good.
-        </p>
-      </li>
-      <li class="review-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/olena@1x-_uRtyL2H.png 1x, /Simply-chocolate/assets/olena@2x-C0rFTX51.png 2x"
-          />
-          <img src="/Simply-chocolate/assets/olena@1x-_uRtyL2H.png" alt="olena" />
-        </picture>
-        <h3 class="revier">Olena Kampusch</h3>
-        <p class="review-text">
-          Chocolate is a family favourite treat. Love the delicious smooth
-          chocolate and the creaminess inside. The wafer is soft but crunchy.
-        </p>
-      </li>
-      <li class="review-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/natalia@1x-BoxZhdFD.png 1x, /Simply-chocolate/assets/natalia@2x-CxA9pz6u.png 2x"
-          />
-          <img src="/Simply-chocolate/assets/natalia@1x-BoxZhdFD.png" alt="natalia" />
-        </picture>
-        <h3 class="revier">Natalia Sus</h3>
-        <p class="review-text">
-          The chocolate assortment was delicious. Both dark and milk chocolate
-          pieces were smooth and just right on the sweetness level.
-        </p>
-      </li>
-      <li class="review-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/danilo@1x-DuHMBrAi.png 1x, /Simply-chocolate/assets/danilo@2x-DRxsG-YM.png 2x"
-          />
-          <img src="/Simply-chocolate/assets/danilo@1x-DuHMBrAi.png" alt="danilo" />
-        </picture>
-        <h3 class="revier">Danilo Nottingham</h3>
-        <p class="review-text">
-          This is delicious. It so rich and flavorful you don’t need to use as
-          many. I love topping an apple with almond butter and these chips for a
-          snack.
-        </p>
-      </li>
-      <li class="review-item">
-        <picture>
-          <source
-            srcset="/Simply-chocolate/assets/irina@1x-NSV2iTSD.png 1x, /Simply-chocolate/assets/irina@2x-Vp5yU7a3.png 2x"
-          />
-          <img src="/Simply-chocolate/assets/irina@1x-NSV2iTSD.png" alt="irina" />
-        </picture>
-        <h3 class="revier">Irina Tydnyuk</h3>
-        <p class="review-text">
-          This is simply the best chocolate around, and I'm just thrilled to
-          support a local company! Best local chocolate - world class :)
-        </p>
-      </li>
-    </ul>
-    <button type="button" class="btn btn-rev" data-review-open>Leave a review</button>
+    <div class="swiper-rew">
+      <ul class="review-cards swiper-wrapper">
+        <li class="review-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/victoria@1x-azNZ_NbC.png 1x, /Simply-chocolate/assets/victoria@2x-DTjiZSaa.png 2x"
+            />
+            <img src="/Simply-chocolate/assets/victoria@1x-azNZ_NbC.png" alt="victoria" />
+          </picture>
+          <h3 class="revier">Victoria Dobrzhanska</h3>
+          <p class="review-text">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </li>
+        <li class="review-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/nazar@1x-DGOgUH7d.png 1x, /Simply-chocolate/assets/nazar@2x-DJOexABF.png 2x"
+            />
+            <img src="/Simply-chocolate/assets/nazar@1x-DGOgUH7d.png" alt="nazar" />
+          </picture>
+          <h3 class="revier">Nazar Babenko</h3>
+          <p class="review-text">
+            This chocolate confection is a delight! A delight! The wafer is
+            light and crisp, the hazelnut cream is smooth, and the chocolate is
+            good.
+          </p>
+        </li>
+        <li class="review-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/olena@1x-_uRtyL2H.png 1x, /Simply-chocolate/assets/olena@2x-C0rFTX51.png 2x"
+            />
+            <img src="/Simply-chocolate/assets/olena@1x-_uRtyL2H.png" alt="olena" />
+          </picture>
+          <h3 class="revier">Olena Kampusch</h3>
+          <p class="review-text">
+            Chocolate is a family favourite treat. Love the delicious smooth
+            chocolate and the creaminess inside. The wafer is soft but crunchy.
+          </p>
+        </li>
+        <li class="review-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/natalia@1x-BoxZhdFD.png 1x, /Simply-chocolate/assets/natalia@2x-CxA9pz6u.png 2x"
+            />
+            <img src="/Simply-chocolate/assets/natalia@1x-BoxZhdFD.png" alt="natalia" />
+          </picture>
+          <h3 class="revier">Natalia Sus</h3>
+          <p class="review-text">
+            The chocolate assortment was delicious. Both dark and milk chocolate
+            pieces were smooth and just right on the sweetness level.
+          </p>
+        </li>
+        <li class="review-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/danilo@1x-DuHMBrAi.png 1x, /Simply-chocolate/assets/danilo@2x-DRxsG-YM.png 2x"
+            />
+            <img src="/Simply-chocolate/assets/danilo@1x-DuHMBrAi.png" alt="danilo" />
+          </picture>
+          <h3 class="revier">Danilo Nottingham</h3>
+          <p class="review-text">
+            This is delicious. It so rich and flavorful you don’t need to use as
+            many. I love topping an apple with almond butter and these chips for
+            a snack.
+          </p>
+        </li>
+        <li class="review-item swiper-slide">
+          <picture>
+            <source
+              srcset="/Simply-chocolate/assets/irina@1x-NSV2iTSD.png 1x, /Simply-chocolate/assets/irina@2x-Vp5yU7a3.png 2x"
+            />
+            <img src="/Simply-chocolate/assets/irina@1x-NSV2iTSD.png" alt="irina" />
+          </picture>
+          <h3 class="revier">Irina Tydnyuk</h3>
+          <p class="review-text">
+            This is simply the best chocolate around, and I'm just thrilled to
+            support a local company! Best local chocolate - world class :)
+          </p>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+    <button type="button" class="btn btn-rev" data-review-open>
+      Leave a review
+    </button>
   </div>
 </section>
 
@@ -535,7 +662,7 @@
 </section>
     </main>
 
-    <footer class="section-footer">
+    <footer class="section-footer" id="footer">
   <div class="container footer-container">
     <div class="tab-wrap">
       <h2 class="footer-title">
@@ -560,13 +687,13 @@
         </address>
         <ul class="soc-link footer-soc-link">
           <li>
-            <a href=""
+            <a href="https://www.instagram.com/"
               ><svg class="soc-ico footer-soc-ico">
                 <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#instagram-mob"></use></svg
             ></a>
           </li>
           <li>
-            <a href=""
+            <a href="https:/x.com/"
               ><svg class="soc-ico footer-soc-ico">
                 <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#twitter-mob"></use></svg
             ></a>
@@ -577,168 +704,254 @@
 
     <nav class="footer-nav">
       <ul>
-        <li>Home</li>
-        <li>How it&#39;s made?</li>
-        <li>Our products</li>
-        <li>Top sellers</li>
-        <li>Chocolate is loved</li>
+        <li><a class="footer-nav-link" href="#hero">Home</a></li>
+        <li>
+          <a class="footer-nav-link" href="#how-its-made">How it&#39;s made?</a>
+        </li>
+        <li>
+          <a class="footer-nav-link" href="#our-products">Our products</a>
+        </li>
+        <li><a class="footer-nav-link" href="#top-sellers">Top sellers</a></li>
+        <li>
+          <a class="footer-nav-link" href="#reviews">Chocolate is loved</a>
+        </li>
       </ul>
     </nav>
   </div>
 </footer>
 
 
-    <div class="backdrop is-hidden" data-buynow>
-   <div class="modal-buynow">
-      <button type="button" class="close-btn" data-buynow-close>
-         <svg width="24px" height="24px" class="svg-close">
-            <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#close-big"></use>
-         </svg>
-      </button>
-      <h3 class="sec-title modal-buy-title"><span>buy</span> now</h3>
-      <ul class="list-gram">
-         <li class="gram-item onehundred">
+    <div class="backdrop is-hidden" data-buynow-backdrop>
+  <div class="modal-buynow is-hidden">
+    <button type="button" class="close-btn" data-buynow-close>
+      <svg width="24px" height="24px" class="svg-close">
+        <use href="./../img/sprite.svg#close-big"></use>
+      </svg>
+    </button>
+    <h3 class="sec-title modal-buy-title"><span>buy</span> now</h3>
+    <div class="swiper-bynow">
+      <ul class="list-gram swiper-wrapper">
+        <li class="onehundred swiper-slide">
+          <div class="gram-item">
             <picture>
-               <source
-                 srcset="data:image/jpeg;base64,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 1x, /Simply-chocolate/assets/100g-tab@2x-MswMmvNL.jpg 2x"
-                 media="(min-width: 1200px)"
-               >
-               <source
-                 srcset="data:image/jpeg;base64,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 1x, /Simply-chocolate/assets/100g-tab@2x-MswMmvNL.jpg 2x"
-                 media="(min-width: 768px)"
-               >
-   
-               <img
-                 src="data:image/jpeg;base64,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"
-                 alt="100g"
-                 class="buy-img"
-               >
-             </picture>
-            <button type="button" class="btn modal-buy-gram">100g</button>          
-         </li>
-         <li class="gram-item twohundred">
-               <picture>
-                  <source
-                    srcset="data:image/jpeg;base64,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 1x, /Simply-chocolate/assets/200g-tab@2x-BDplC7dk.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="data:image/jpeg;base64,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 1x, /Simply-chocolate/assets/200g-tab@2x-BDplC7dk.jpg 2x"
-                    media="(min-width: 768px)"
-                  />
-      
-                  <img
-                    src="data:image/jpeg;base64,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"
-                    alt="200g"
-                    class="buy-img"
-                  />
-               </picture>
-               <button type="button" class="btn modal-buy-gram">200g</button>
-         </li>
-         <li class="gram-item threehundred">
-               <picture>
-                  <source
-                    srcset="data:image/jpeg;base64,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 1x, /Simply-chocolate/assets/300g-tab@2x-YOi7HwZY.jpg 2x"
-                    media="(min-width: 1200px)"
-                  />
-                  <source
-                    srcset="data:image/jpeg;base64,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 1x, /Simply-chocolate/assets/300g-tab@2x-YOi7HwZY.jpg 2x"
-                    media="(min-width: 768px)"
-                  />
-      
-                  <img
-                    src="/Simply-chocolate/assets/300g-mob@1x-BJdFX6Vw.jpg"
-                    alt="300g"
-                    class="buy-img"
-                  />
-               </picture>
-               <button type="button" class="btn modal-buy-gram">100g</button>          
-         </li>
+              <source
+                srcset="./../img/modal/buynow/100g-desk@1x.jpg 1x, ./../img/modal/buynow/100g-desk@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./../img/modal/buynow/100g-tab@1x.jpg 1x, ./../img/modal/buynow/100g-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                src="./../img/modal/buynow/100g-mob@1x.jpg"
+                alt="100g"
+                class="buy-img"
+              />
+            </picture>
+            <button type="button" class="btn modal-buy-gram">100g</button>
+          </div>
+        </li>
+        <li class="twohundred swiper-slide">
+          <div class="gram-item">
+            <picture>
+              <source
+                srcset="./../img/modal/buynow/200g-desk@1x.jpg 1x, ./../img/modal/buynow/200g-desk@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./../img/modal/buynow/200g-tab@1x.jpg 1x, ./../img/modal/buynow/200g-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                src="./../img/modal/buynow/200g-mob@1x.jpg"
+                alt="200g"
+                class="buy-img"
+              />
+            </picture>
+            <button type="button" class="btn modal-buy-gram">200g</button>
+          </div>
+        </li>
+        <li class="threehundred swiper-slide">
+          <div class="gram-item">
+            <picture>
+              <source
+                srcset="./../img/modal/buynow/300g-desk@1x.jpg 1x, ./../img/modal/buynow/300g-desk@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./../img/modal/buynow/300g-tab@1x.jpg 1x, ./../img/modal/buynow/300g-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                src="./../img/modal/buynow/300g-mob@1x.jpg"
+                alt="300g"
+                class="buy-img"
+              />
+            </picture>
+            <button type="button" class="btn modal-buy-gram">300g</button>
+          </div>
+        </li>
       </ul>
-      <form class="review-form" autocomplete="off">
-         <div class="form-field-buynow">
-            <label for="name" class="label-buy">Personal information</label>
-            <div class="pers-info">
-               <input type="text" name="name" id="name" class="input-review" placeholder="Name">
-               <input type="text" name="surname"  class="input-review" placeholder="Surname">
-            </div> 
-         </div>
-         <div class="form-field-buynow">
-            <label for="email" class="label-buy">Email</label>
-            <input type="email" name="email" id="email" class="input-review" placeholder="Enter your email">
-         </div>
-         <div class="form-field-buynow">
-            <label for="tel" class="label-buy">Phone number</label>
-            <label for="tel" class="tel-label">+380</label>
-            <input type="tel" name="tel" id="tel" class="input-review input-tel" placeholder="Phone number" maxlength="9">
-            <svg width="24px" height="24px" class="svg-flag">
-               <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#flag"></use>
-            </svg>
-         </div>
-         <div class="form-field-buynow">
-            <label for="card" class="label-buy">Card number</label>
-            <input type="tel" name="tel" id="card" class="input-review input-card" placeholder="Enter card" maxlength="16">
-            <svg width="32px" height="21x" class="svg-card">
-               <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#mastercard"></use>
-            </svg>
-         </div>
-         <div class="comment-form">
-            <label for="comment" class="label-buy">Comment</label>
-            <textarea name="comment" id="comment" placeholder="Enter text" class="comment-buy"></textarea>
-         </div>
-         <button type="submit" class="btn">Submit</button>
-      </form>
-   </div>
-</div>
-    <div class="backdrop is-hidden" data-review>
-   <div class="order-modal">
-      <button type="button" class="close-btn" data-review-close>
-         <svg width="24px" height="24px" class="svg-close">
-            <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#close-big"></use>
-         </svg>
-      </button>
-      <h3 class="sec-title modal-rev-title">leave a review <br>about <span>our chocolate</span></h3>
-      <form class="review-form" autocomplete="off">
-         <div class="form-field">
-            <input type="text" name="name" class="input-review" placeholder="Name">
-         </div>
-         <div class="form-field">
-            <input type="email" name="email" class="input-review" placeholder="Enter your email">
-         </div>
-         <div class="form-field">
-            <label for="tel" class="tel-label">+380</label>
-            <input type="tel" name="tel" id="tel" class="input-review input-tel" placeholder="Phone number" maxlength="9">
-            <svg width="24px" height="24px" class="svg-flag">
-               <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#flag"></use>
-            </svg>
-         </div>
-         <div class="comment-form">
-            <textarea name="comment" placeholder="Enter text" class="comment-form-rev"></textarea>
-         </div>
-         <button type="submit" class="btn">Send</button>
-      </form>
-   </div>
-</div>
-    
-    
-    <div class="backdrop is-hidden" data-explore>
-   <div class="modal-explore">
-      <div class="explore-modal-bg"></div>
-      <button type="button" class="close-btn" data-explore-close>
-         <svg width="24px" height="24px" class="svg-close">
-            <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#close-big"></use>
-         </svg>
-      </button>
-      <div class="explore-items">
-         <h3 class="sec-title modal-explore-title">Explore our <br><span>new chocolate</span> first!</h3>
-         <form class="explore-form" autocomplete="off">
-            <input type="email" name="email" class="input-explore" placeholder="Enter your email">
-            <button type="submit" class="btn modal-sub-btn">Submit</button>
-         </form>
+      <div class="swiper-pagination byunow-pagination"></div>
+    </div>
+    <form class="review-form" autocomplete="off">
+      <div class="form-field-buynow">
+        <label for="name" class="label-buy">Personal information</label>
+        <div class="pers-info">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input-review"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="surname"
+            class="input-review"
+            placeholder="Surname"
+          />
+        </div>
       </div>
-      
-   </div>
+      <div class="form-field-buynow">
+        <label for="email" class="label-buy">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-review"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-field-buynow">
+        <label for="tel" class="label-buy">Phone number</label>
+        <label for="tel" class="tel-label">+380</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          class="input-review input-tel"
+          placeholder="Phone number"
+          maxlength="9"
+        />
+        <svg width="24px" height="24px" class="svg-flag">
+          <use href="./../img/sprite.svg#flag"></use>
+        </svg>
+      </div>
+      <div class="form-field-buynow">
+        <label for="card" class="label-buy">Card number</label>
+        <input
+          type="tel"
+          name="tel"
+          id="card"
+          class="input-review input-card"
+          placeholder="Enter card"
+          maxlength="16"
+        />
+        <svg width="32px" height="21px" class="svg-card">
+          <use href="./../img/sprite.svg#mastercard"></use>
+        </svg>
+      </div>
+      <div class="comment-form">
+        <label for="comment" class="label-buy">Comment</label>
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+          class="comment-buy"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
 </div>
 
+    <div class="backdrop is-hidden" data-review-backdrop>
+  <div class="order-modal is-hidden" data-review>
+    <button type="button" class="close-btn" data-review-close>
+      <svg width="24px" height="24px" class="svg-close">
+        <use href="./../img/sprite.svg#close-big"></use>
+      </svg>
+    </button>
+    <h3 class="sec-title modal-rev-title">
+      leave a review <br />about <span>our chocolate</span>
+    </h3>
+    <form class="review-form" autocomplete="off">
+      <div class="form-field">
+        <input
+          type="text"
+          name="name"
+          class="input-review"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-field">
+        <input
+          type="email"
+          name="email"
+          class="input-review"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-field">
+        <label for="tel" class="tel-label">+380</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          class="input-review input-tel"
+          placeholder="Phone number"
+          maxlength="9"
+        />
+        <svg width="24px" height="24px" class="svg-flag">
+          <use href="./../img/sprite.svg#flag"></use>
+        </svg>
+      </div>
+      <div class="comment-form">
+        <textarea
+          name="comment"
+          placeholder="Enter text"
+          class="comment-form-rev"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </div>
+</div>
+
+
+    
+    
+    <div class="backdrop is-hidden" data-explore-backdrop>
+  <div class="modal-explore is-hidden" data-explore>
+    <div class="explore-modal-bg"></div>
+    <button type="button" class="close-btn" data-explore-close>
+      <svg width="24px" height="24px" class="svg-close">
+        <use href="./../img/sprite.svg#close-big"></use>
+      </svg>
+    </button>
+    <div class="explore-items">
+      <h3 class="sec-title modal-explore-title">
+        Explore our <br /><span>new chocolate</span> first!
+      </h3>
+      <form class="explore-form" autocomplete="off">
+        <input
+          type="email"
+          name="email"
+          class="input-explore"
+          placeholder="Enter your email"
+        />
+        <button type="submit" class="btn modal-sub-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
