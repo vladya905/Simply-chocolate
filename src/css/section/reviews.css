@@ -47,6 +47,7 @@
   background-color: transparent;
   border: 1px solid var(--color-orange);
 }
+
 .swiper-rew {
   overflow: hidden;
   width: 100%;
@@ -55,7 +56,13 @@
 }
 .swiper-slide {
   max-width: 100%;
+.btn-rev:hover,
+.btn-rev:focus{
+  color: var(--color-white);
+  background-color: var(--color-orange);
+
 }
+
 
 /*! tablet */
 @media screen and (min-width: 768px) {
