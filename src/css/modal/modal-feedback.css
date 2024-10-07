@@ -1,0 +1,60 @@
+.modal-feedback {
+  padding: 14px;
+  background-color: var(--color-orange);
+  width: 311px;
+  height: 350px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../../img/modal/thankyou/thankyou-mob@1x.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 100% auto;
+}
+@media (max-width: 767px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .modal-feedback {
+      background-image: url(../../img/modal/thankyou/thankyou-mob@2x.png);
+    }
+  }
+}
+.feedback-close-btn {
+  margin-left: auto;
+  margin-bottom: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #fcf1e0;
+  border: none;
+  border-radius: 50%;
+}
+.feedback-close-ico {
+  stroke: #d44528;
+}
+.feedback-title {
+  margin-left: 44px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  color: var(--color-orange-light);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.feedback-text {
+  margin-left: 44px;
+  margin-right: 10px;
+
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
