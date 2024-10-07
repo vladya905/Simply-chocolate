@@ -45,6 +45,7 @@
   height: 28px;
 }
 .header-menu {
+  z-index: 100;
   overflow: hidden;
   background-color: var(--color-dark);
   position: fixed;

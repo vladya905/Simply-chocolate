@@ -1,29 +1,53 @@
-<div class="backdrop is-hidden" data-review>
-   <div class="order-modal">
-      <button type="button" class="close-btn" data-review-close>
-         <svg width="24px" height="24px" class="svg-close">
-            <use href="./img/sprite.svg#close-big"></use>
-         </svg>
-      </button>
-      <h3 class="sec-title modal-rev-title">leave a review <br>about <span>our chocolate</span></h3>
-      <form class="review-form" autocomplete="off">
-         <div class="form-field">
-            <input type="text" name="name" class="input-review" placeholder="Name">
-         </div>
-         <div class="form-field">
-            <input type="email" name="email" class="input-review" placeholder="Enter your email">
-         </div>
-         <div class="form-field">
-            <label for="tel" class="tel-label">+380</label>
-            <input type="tel" name="tel" id="tel" class="input-review input-tel" placeholder="Phone number" maxlength="9">
-            <svg width="24px" height="24px" class="svg-flag">
-               <use href="./img/sprite.svg#flag"></use>
-            </svg>
-         </div>
-         <div class="comment-form">
-            <textarea name="comment" placeholder="Enter text" class="comment-form-rev"></textarea>
-         </div>
-         <button type="submit" class="btn">Send</button>
-      </form>
-   </div>
+<div class="backdrop is-hidden" data-review-backdrop>
+  <div class="order-modal is-hidden" data-review>
+    <button type="button" class="close-btn" data-review-close>
+      <svg width="24px" height="24px" class="svg-close">
+        <use href="./../img/sprite.svg#close-big"></use>
+      </svg>
+    </button>
+    <h3 class="sec-title modal-rev-title">
+      leave a review <br />about <span>our chocolate</span>
+    </h3>
+    <form class="review-form" autocomplete="off">
+      <div class="form-field">
+        <input
+          type="text"
+          name="name"
+          class="input-review"
+          placeholder="Name"
+        />
+      </div>
+      <div class="form-field">
+        <input
+          type="email"
+          name="email"
+          class="input-review"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div class="form-field">
+        <label for="tel" class="tel-label">+380</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          class="input-review input-tel"
+          placeholder="Phone number"
+          maxlength="9"
+        />
+        <svg width="24px" height="24px" class="svg-flag">
+          <use href="./../img/sprite.svg#flag"></use>
+        </svg>
+      </div>
+      <div class="comment-form">
+        <textarea
+          name="comment"
+          placeholder="Enter text"
+          class="comment-form-rev"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </div>
 </div>
+
