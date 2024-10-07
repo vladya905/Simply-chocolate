@@ -24,9 +24,11 @@
 }
 
 .unico-item {
+  overflow: hidden;
+  position: relative;
   width: 335px;
   height: 270px;
-  border: 1px solid teal;
+  border: 1px solid var(--color-orange);
   border-radius: 15px;
 }
 .unico-item:not(:last-child) {
@@ -59,7 +61,61 @@
   margin-left: 28px;
   margin-bottom: 28px;
 }
+.unico-item:hover .unico-card,
+.unico-item:focus .unico-card {
+  transform: translateX(0);
+}
+.unico-item:hover {
+  border-color: var(--color-white);
+}
 .unico-card {
+  padding: 28px;
+  display: inline-block;
+  transform: translateX(-100%);
+  transition: transform var(--transition);
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+}
+.unico-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+.card-btn {
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  padding: 6px 16px;
+}
+.card-btn-sec {
+  color: var(--color-black);
+  background-color: var(--main-background-color);
+  border: 1px solid var(--color-orange);
+}
+.btn-wrap {
+  margin-bottom: 14px;
+  display: flex;
+  gap: 6px;
+}
+.card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  overflow-y: scroll;
+  max-height: 146px;
+  color: var(--color-dark);
+}
+.card-text::-webkit-scrollbar {
   display: none;
 }
 /*! tablet */

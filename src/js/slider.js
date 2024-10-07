@@ -9,8 +9,11 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
-    }, 
+  }, 
     
+  autoplay: {
+      delay:3000,
+    },
     
     breakpoints: {
       375: {
@@ -41,7 +44,10 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     }, 
     
-    
+    autoplay: {
+      delay:3000,
+    },
+
     breakpoints: {
       375: {
         slidesPerView: 1,
@@ -71,6 +77,9 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     }, 
     
+   autoplay: {
+      delay:3000,
+   },
    
     breakpoints: {
       375: {
