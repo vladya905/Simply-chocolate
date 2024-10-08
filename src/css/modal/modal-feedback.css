@@ -34,6 +34,7 @@
 }
 .feedback-close-btn:is(:hover, :focus) {
   background-color: var(--color-orange-dark);
+  cursor: pointer;
 }
 .feedback-close-btn:is(:hover, :focus) .feedback-close-ico {
   stroke: var(--color-white);
