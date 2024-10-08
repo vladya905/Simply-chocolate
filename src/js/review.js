@@ -6,7 +6,7 @@ const refs = {
   closeModalBtn: document.querySelector('[data-review-close]'),
   modal: document.querySelector('[data-review]'),
   backdrop: document.querySelector('[data-review-backdrop]'),
-  submitBtn: document.querySelector('[data-submit]'),
+  reviewForm: document.querySelector('.nosubmit'), 
 };
 
 refs.openModalBtn.addEventListener('click', toggleModal);
@@ -14,14 +14,20 @@ refs.closeModalBtn.addEventListener('click', toggleModal);
 refs.backdrop.addEventListener('click', onBackdropClick);
 refs.feedbackBackdrop.addEventListener('click', onFeedbackBackdropClick);
 window.addEventListener('keydown', onEscKeyPress);
-refs.submitBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  toggleFeedbackModal();
+
+
+refs.reviewForm.addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  if (refs.reviewForm.checkValidity()) { 
+    toggleFeedbackModal(); 
+  }
 });
 
 refs.closeFeedbackBtn.addEventListener('click', function() {
   toggleFeedbackModal();
 });
+
 
 function toggleFeedbackModal() {
   if (!refs.modal.classList.contains('is-hidden')) {
@@ -38,6 +44,7 @@ function toggleModal() {
   document.body.classList.toggle('no-scroll');
 }
 
+
 function onBackdropClick(event) {
   if (event.target === refs.backdrop) {
     toggleModal();
@@ -49,6 +56,7 @@ function onFeedbackBackdropClick(event) {
     toggleFeedbackModal();
   }
 }
+
 
 function onEscKeyPress(event) {
   if (event.code === 'Escape') {

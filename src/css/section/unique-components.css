@@ -63,9 +63,10 @@
 }
 .unico-item:hover .unico-card,
 .unico-item:focus .unico-card {
-  transform: translateX(0);
+  transform: translateX(0) var(--transition);
 }
-.unico-item:hover {
+.unico-item:hover,
+.unico-item:focus {
   border-color: var(--color-white);
 }
 .unico-card {

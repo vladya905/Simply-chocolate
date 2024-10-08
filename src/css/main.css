@@ -6,6 +6,7 @@
   --color-input-border: #1111110d; /* Input border color */
   --color-placeholder: #4040404d; /* Placeholder Text Color */
   --color-orange: #fd9222; /* Buttons(+Hover/Focus/) Text, Background */
+  --color-orange-dark: #d44528;
   --color-orange-light: #fcf1e0; /* Buttons(+Hover/Focus/) Text */
   --color-white: #ffffff;
   --color-white-70: #ffffff82; /* Text */
@@ -81,7 +82,7 @@ p {
   transition: var(--transition);
 }
 .btn:hover,
-.btn:focus{
+.btn:focus {
   background-color: var(--color-orange-light);
   color: var(--color-orange);
 }
@@ -145,7 +146,7 @@ p {
 
 .swiper-pagination-bullet-active {
   width: 28px;
-  background: #fd9222;
+  background: var(--color-orange);
 }
 @media screen and (min-width: 768px) {
   section {
