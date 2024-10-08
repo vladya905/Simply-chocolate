@@ -45,7 +45,6 @@
    color: var(--color-black);
 }
 .form-field-buynow {
-  margin-top: 32px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -98,6 +97,7 @@
   width: 100%;
   max-width: 100%;
   max-height: 100vh;
+  margin-bottom: 32px;
 }
 .swiper-pagination.byunow-pagination {
   margin-top: 0;
