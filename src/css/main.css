@@ -11,7 +11,7 @@
   --color-white-70: #ffffff82; /* Text */
 
   --backdrop-color: rgba(77, 77, 77, 0.7);
-  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,
 h2,
@@ -81,7 +81,7 @@ p {
   transition: var(--transition);
 }
 .btn:hover,
-.btn:focus{
+.btn:focus {
   background-color: var(--color-orange-light);
   color: var(--color-orange);
 }

@@ -6,15 +6,17 @@ const refs = {
   closeModalBtn: document.querySelector('[data-buynow-close]'),
   modal: document.querySelector('.modal-buynow'),
   backdrop: document.querySelector('[data-buynow-backdrop]'),
-  subBtn: document.querySelector('[data-sub]'),
+  subBtn: document.querySelectorAll('[data-sub]'),
 };
 
 refs.thankBackdrop.addEventListener('click', onThankBackdropClick);
 window.addEventListener('keydown', onEscKeyPress);
 
-refs.subBtn.addEventListener('click', function(event) {
-  event.preventDefault();
-  toggleThankModal();
+refs.subBtn.forEach(btn => {
+  btn.addEventListener('click', function(event) {
+    event.preventDefault();
+    toggleThankModal();
+  });
 });
 
 function onThankBackdropClick(event) {

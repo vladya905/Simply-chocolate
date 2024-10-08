@@ -30,6 +30,10 @@
 .address-link {
   color: var(--color-white);
   font-weight: 400;
+  transition: color var(--transition);
+}
+.address-link:is(:hover, :focus) {
+  color: var(--color-orange);
 }
 .address-wrap {
   display: flex;
@@ -43,8 +47,12 @@
   margin-top: 0;
   gap: 14px;
 }
+.soc-ico.footer-soc-ico:is(:hover, :focus) {
+  stroke: var(--color-orange);
+}
 .soc-ico.footer-soc-ico {
   margin: 0;
+  transition: stroke var(--transition);
 }
 .footer-nav > ul {
   display: flex;
@@ -53,6 +61,10 @@
 }
 .footer-nav-link {
   color: var(--color-white);
+  transition: color var(--transition);
+}
+.footer-nav-link:is(:hover, :focus) {
+  color: var(--color-orange);
 }
 
 /*!tablet */
