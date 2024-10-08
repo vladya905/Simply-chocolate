@@ -2,8 +2,10 @@
   transform: scale(0);
 }
 .order-modal {
+  top: 50%;
+  left: 50%;
   position: absolute;
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
   max-width: 311px;
   max-height: 471px;
   padding: 32px 24px;
