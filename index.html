@@ -15,7 +15,7 @@
     />
     <script type="module" crossorigin src="/Simply-chocolate/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Simply-chocolate/assets/vendor-DhL-EaBS.js">
-    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-DO5X78J_.css">
+    <link rel="stylesheet" crossorigin href="/Simply-chocolate/assets/index-BjkPqevo.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -35,19 +35,21 @@
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-item">
-            <a class="nav-link" href="#hero">Home</a>
+            <a class="nav-link scroll" href="#hero">Home</a>
           </li>
           <li class="header-nav-item">
-            <a class="nav-link" href="#how-its-made">How it&#39;s made?</a>
+            <a class="nav-link scroll" href="#how-its-made"
+              >How it&#39;s made?</a
+            >
           </li>
           <li class="header-nav-item">
-            <a class="nav-link" href="#our-products">Our products</a>
+            <a class="nav-link scroll" href="#our-products">Our products</a>
           </li>
           <li class="header-nav-item">
-            <a class="nav-link" href="#top-sellers">Top sellers</a>
+            <a class="nav-link scroll" href="#top-sellers">Top sellers</a>
           </li>
           <li class="header-nav-item">
-            <a class="nav-link" href="#reviews">Chocolate is loved</a>
+            <a class="nav-link scroll" href="#reviews">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
@@ -808,7 +810,7 @@
             id="name"
             class="input-review"
             placeholder="Name"
-            pattern="[A-z]{1,15}"
+            pattern="[A-zА-яёЁ]{1,15}"
           />
           <input
             required
@@ -816,7 +818,7 @@
             name="surname"
             class="input-review"
             placeholder="Surname"
-            pattern="[A-z]{1,15}"
+            pattern="[A-zА-яёЁ]{1,15}"
           />
         </div>
       </div>
@@ -829,7 +831,6 @@
           id="email"
           class="input-review"
           placeholder="Enter your email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
         />
       </div>
       <div class="form-field-buynow">
@@ -842,6 +843,7 @@
           id="tel"
           class="input-review input-tel"
           placeholder="Phone number"
+          minlength="9"
           maxlength="9"
           pattern="\+?[0-9\s\-\(\)]+"
         />
@@ -858,6 +860,7 @@
           id="card"
           class="input-review input-card"
           placeholder="Enter card"
+          minlength="16"
           maxlength="16"
           pattern="\+?[0-9]+"
         />
@@ -889,25 +892,50 @@
     <h3 class="sec-title modal-rev-title">
       leave a review <br />about <span>our chocolate</span>
     </h3>
-    <form class="review-form" autocomplete="off">
+    <form class="review-form nosubmit" autocomplete="off">
       <div class="form-field">
-        <input required type="text" name="name" class="input-review" 
-          placeholder="Name" pattern="[A-z]{1,15}"/>
+        <input
+          required
+          type="text"
+          name="name"
+          class="input-review"
+          placeholder="Name"
+          pattern="[A-zА-яёЁ]{1,15}"
+        />
       </div>
       <div class="form-field">
-        <input required type="email" name="email" class="input-review" 
-          placeholder="Enter your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
+        <input
+          required
+          type="email"
+          name="email"
+          class="input-review"
+          placeholder="Enter your email"
+        />
       </div>
       <div class="form-field">
         <label for="tel" class="tel-label">+380</label>
-        <input  required type="tel" name="tel" id="tel" class="input-review input-tel" 
-          placeholder="Phone number" maxlength="9" pattern="\+?[0-9\s\-\(\)]+"/>
+        <input
+          required
+          type="tel"
+          name="tel"
+          id="tel"
+          class="input-review input-tel"
+          placeholder="Phone number"
+          minlength="9"
+          maxlength="9"
+          pattern="\+?[0-9\s\-\(\)]+"
+        />
         <svg width="24px" height="24px" class="svg-flag">
           <use href="/Simply-chocolate/assets/sprite-BjD7SbJO.svg#flag"></use>
         </svg>
       </div>
       <div class="comment-form">
-        <textarea required name="comment" placeholder="Enter text" class="comment-form-rev"></textarea>
+        <textarea
+          required
+          name="comment"
+          placeholder="Enter text"
+          class="comment-form-rev"
+        ></textarea>
       </div>
       <button type="submit" class="btn" data-submit>Send</button>
     </form>
@@ -957,8 +985,13 @@
         Explore our <br /><span>new chocolate</span> first!
       </h3>
       <form class="explore-form" autocomplete="off">
-        <input required type="email" name="email" class="input-explore" 
-          placeholder="Enter your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
+        <input
+          required
+          type="email"
+          name="email"
+          class="input-explore"
+          placeholder="Enter your email"
+        />
         <button type="submit" class="btn modal-sub-btn">Submit</button>
       </form>
     </div>
