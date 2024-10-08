@@ -1,3 +1,7 @@
+.backdrop.is-hidden .modal-thank {
+  transform: scale(0);
+  opacity: 0;
+}
 .modal-thank {
   padding: 14px;
   background-color: var(--color-orange);
@@ -7,10 +11,12 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  opacity: 1;
+  transform: scale(1) translate(-50%, -50%);
   background-image: url(../../img/modal/thankyou/thankyou-mob.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
+  transition: transform var(--transition), opacity var(--transition);
 }
 
 .thank-close-btn {

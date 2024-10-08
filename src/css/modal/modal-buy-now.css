@@ -1,6 +1,7 @@
 .backdrop.is-hidden .modal-buynow {
-  transform: translate(-50%, -50%);
+  transform: scale(0);
 }
+
 .modal-buynow {
   position: absolute;
   max-width: 311px;
@@ -8,6 +9,7 @@
   padding: 32px 24px;
   background-color: var(--main-background-color);
   border-radius: 15px;
+  transition: transform var(--transition), opacity var(--transition);
 }
 .modal-buy-title {
   margin-bottom: 32px;
