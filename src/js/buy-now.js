@@ -6,17 +6,20 @@ const refs = {
   closeModalBtn: document.querySelector('[data-buynow-close]'),
   modal: document.querySelector('.modal-buynow'),
   backdrop: document.querySelector('[data-buynow-backdrop]'),
-  subBtn: document.querySelectorAll('[data-sub]'),
+  form: document.querySelector('.review-form'),
 };
 
 refs.thankBackdrop.addEventListener('click', onThankBackdropClick);
 window.addEventListener('keydown', onEscKeyPress);
 
-refs.subBtn.forEach(btn => {
-  btn.addEventListener('click', function(event) {
-    event.preventDefault();
+refs.form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  if (refs.form.checkValidity()) {
     toggleThankModal();
-  });
+    toggleModal();
+  } else {
+    refs.form.reportValidity();
+  }
 });
 
 function onThankBackdropClick(event) {
@@ -30,9 +33,6 @@ refs.closeThankBtn.addEventListener('click', function() {
 });
 
 function toggleThankModal() {
-  if (!refs.modal.classList.contains('is-hidden')) {
-    toggleModal(); 
-  }
   refs.thankModal.classList.toggle('is-hidden');
   refs.thankBackdrop.classList.toggle('is-hidden');
   document.body.classList.toggle('no-scroll');
