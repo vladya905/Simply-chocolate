@@ -8,25 +8,50 @@
     <h3 class="sec-title modal-rev-title">
       leave a review <br />about <span>our chocolate</span>
     </h3>
-    <form class="review-form" autocomplete="off">
+    <form class="review-form nosubmit" autocomplete="off">
       <div class="form-field">
-        <input required type="text" name="name" class="input-review" 
-          placeholder="Name" pattern="[A-z]{1,15}"/>
+        <input
+          required
+          type="text"
+          name="name"
+          class="input-review"
+          placeholder="Name"
+          pattern="[A-zА-яёЁ]{1,15}"
+        />
       </div>
       <div class="form-field">
-        <input required type="email" name="email" class="input-review" 
-          placeholder="Enter your email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
+        <input
+          required
+          type="email"
+          name="email"
+          class="input-review"
+          placeholder="Enter your email"
+        />
       </div>
       <div class="form-field">
         <label for="tel" class="tel-label">+380</label>
-        <input  required type="tel" name="tel" id="tel" class="input-review input-tel" 
-          placeholder="Phone number" maxlength="9" pattern="\+?[0-9\s\-\(\)]+"/>
+        <input
+          required
+          type="tel"
+          name="tel"
+          id="tel"
+          class="input-review input-tel"
+          placeholder="Phone number"
+          minlength="9"
+          maxlength="9"
+          pattern="\+?[0-9\s\-\(\)]+"
+        />
         <svg width="24px" height="24px" class="svg-flag">
           <use href="./img/sprite.svg#flag"></use>
         </svg>
       </div>
       <div class="comment-form">
-        <textarea required name="comment" placeholder="Enter text" class="comment-form-rev"></textarea>
+        <textarea
+          required
+          name="comment"
+          placeholder="Enter text"
+          class="comment-form-rev"
+        ></textarea>
       </div>
       <button type="submit" class="btn" data-submit>Send</button>
     </form>

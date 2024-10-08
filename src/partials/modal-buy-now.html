@@ -103,7 +103,7 @@
             id="name"
             class="input-review"
             placeholder="Name"
-            pattern="[A-z]{1,15}"
+            pattern="[A-zА-яёЁ]{1,15}"
           />
           <input
             required
@@ -111,7 +111,7 @@
             name="surname"
             class="input-review"
             placeholder="Surname"
-            pattern="[A-z]{1,15}"
+            pattern="[A-zА-яёЁ]{1,15}"
           />
         </div>
       </div>
@@ -124,7 +124,6 @@
           id="email"
           class="input-review"
           placeholder="Enter your email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
         />
       </div>
       <div class="form-field-buynow">
@@ -137,6 +136,7 @@
           id="tel"
           class="input-review input-tel"
           placeholder="Phone number"
+          minlength="9"
           maxlength="9"
           pattern="\+?[0-9\s\-\(\)]+"
         />
@@ -153,6 +153,7 @@
           id="card"
           class="input-review input-card"
           placeholder="Enter card"
+          minlength="16"
           maxlength="16"
           pattern="\+?[0-9]+"
         />

@@ -33,6 +33,7 @@ iframe {
   border-radius: 15px;
 }
 .rezept-list {
+  cursor: default;
   padding: 0px 0px 0px 14px;
 }
 .point-rezept {

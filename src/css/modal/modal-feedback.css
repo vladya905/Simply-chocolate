@@ -21,14 +21,22 @@
   justify-content: center;
   width: 28px;
   height: 28px;
-  background-color: #fcf1e0;
+  background-color: var(--color-orange-light);
   border: none;
   border-radius: 50%;
+  transition: var(--transition);
 }
 .feedback-close-ico {
   width: 16px;
   height: 16px;
-  stroke: #d44528;
+  stroke: var(--color-orange-dark);
+  transition: var(--transition);
+}
+.feedback-close-btn:is(:hover, :focus) {
+  background-color: var(--color-orange-dark);
+}
+.feedback-close-btn:is(:hover, :focus) .feedback-close-ico {
+  stroke: var(--color-white);
 }
 .feedback-title {
   margin-left: 44px;

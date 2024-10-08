@@ -30,8 +30,9 @@
   transition: var(--transition);
 }
 .svg-close:hover,
-.svg-close:focus{
+.svg-close:focus {
   transform: scale(1.2);
+  stroke: var(--color-orange);
 }
 
 .modal-rev-title {
@@ -61,13 +62,13 @@
 .input-review::placeholder {
   color: var(--color-placeholder);
 }
-.input-review:hover{
+.input-review:hover {
   box-shadow: 0px 5px 5px var(--color-orange);
 }
-.input-review:invalid:focus{
+.input-review:invalid:focus {
   box-shadow: inset 0px 0px 20px 5px rgba(231, 76, 60, 0.7);
 }
-.input-review:valid:focus{
+.input-review:valid:focus {
   box-shadow: inset 0px 0px 20px 5px rgba(46, 204, 113, 0.7);
 }
 .svg-flag {
@@ -112,13 +113,13 @@
 .comment-form-rev::placeholder {
   color: var(--color-placeholder);
 }
-.comment-form-rev:hover{
+.comment-form-rev:hover {
   box-shadow: 0px 5px 5px var(--color-orange);
 }
-.comment-form-rev:invalid:focus{
+.comment-form-rev:invalid:focus {
   box-shadow: inset 0px 0px 20px 5px rgba(231, 76, 60, 0.7);
 }
-.comment-form-rev:valid:focus{
+.comment-form-rev:valid:focus {
   box-shadow: inset 0px 0px 20px 5px rgba(46, 204, 113, 0.7);
 }
 
