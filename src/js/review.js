@@ -18,10 +18,12 @@ window.addEventListener('keydown', onEscKeyPress);
 
 refs.reviewForm.addEventListener('submit', function(event) {
   event.preventDefault(); 
-
+   
   if (refs.reviewForm.checkValidity()) { 
-    toggleFeedbackModal(); 
+    toggleFeedbackModal();
+    
   }
+  refs.reviewForm.reset()
 });
 
 refs.closeFeedbackBtn.addEventListener('click', function() {

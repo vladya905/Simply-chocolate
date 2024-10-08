@@ -23,6 +23,7 @@ refs.form.addEventListener('submit', function(event) {
   } else {
     refs.form.reportValidity(); 
   }
+   refs.form.reset()
 });
 
 refs.closeThankBtns.forEach((btn, index) => {

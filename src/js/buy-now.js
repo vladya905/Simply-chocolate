@@ -26,6 +26,7 @@ refs.form.addEventListener('submit', function(event) {
   } else {
     refs.form.reportValidity();
   }
+  refs.form.reset();
 });
 
 function onThankBackdropClick(event) {
