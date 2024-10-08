@@ -12,6 +12,7 @@ const refs = {
 refs.openModalBtn.addEventListener('click', toggleModal);
 refs.closeModalBtn.addEventListener('click', toggleModal);
 refs.backdrop.addEventListener('click', onBackdropClick);
+refs.feedbackBackdrop.addEventListener('click', onFeedbackBackdropClick);
 window.addEventListener('keydown', onEscKeyPress);
 refs.submitBtn.addEventListener('click', function(event) {
   event.preventDefault();
@@ -40,6 +41,12 @@ function toggleModal() {
 function onBackdropClick(event) {
   if (event.target === refs.backdrop) {
     toggleModal();
+  }
+}
+
+function onFeedbackBackdropClick(event) {
+  if (event.target === refs.feedbackBackdrop) {
+    toggleFeedbackModal();
   }
 }
 
